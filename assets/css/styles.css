@@ -1,0 +1,389 @@
+/* Autor: Waldiney Joaci da Silva Barros */
+@charset "utf-8";
+
+@font-face{/* fonte da pagina */
+    font-family: 'fonteFlorentia';/* nome da fonte */
+    src: url(../font/Florentia-Black-trial.ttf);/* caminho da fonte */
+}
+
+
+
+/* Gerais */
+body{
+
+	font-family:'roboto', sans-serif ; /* fonte */
+}
+.row {
+	margin: 0px;  /* sem margem entre as DIV */
+}
+.container{
+	padding: 70px 0; /* define uma a distância entre o conteúdo de um elemento e suas bordas. */
+}
+
+p, li {
+
+	color: #444; /* cor do paragrafos */
+	font-size: 14px; /* Tamanho da Letra */ 
+}
+
+/* Barra de Navegação */
+header, .navbar{
+	background-color: #0075dc; /* cor de fundo do menu */
+}
+
+/*alinhamento do container*/
+#nav-container {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+#logo {
+	width: 75px; /* Tamanho da logo */
+	margin-left: 30px; /* alinhamento da logo na esquerda */
+	border-radius: 10px; /* Tamanho das bordas redondas da logo */
+}
+
+.navbar-brand { /* palavra escrita ao lado da logo */
+	padding: 0;	/* distancia da borda */
+	color: #FFF; /* cor */
+}
+
+#navbar-links a {
+	color: #FFF; /* cor da letra do Menu */
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+	padding: 1rem .8rem;
+	
+}
+
+/* Slider */
+
+.container-fluid {
+	padding: 0;
+}
+#mainSlider .carousel-inner, #mainSlider .carousel-item{
+	height: 80vh;
+}
+#mainSlider .carousel-caption{
+	top: 30%;
+}
+#mainSlider .carousel-caption h1{
+	font-family: fonteFlorentia; /* tipo da fonte */
+	color: #0084d5;	/* cor da fonte */
+	font-size: 15px; /* Tamanho da Fonte */
+	margin: 200px 50px 20px;
+	
+}
+#mainSlider .carousel-caption h2{
+	font-family: fonteFlorentia; /* tipo da fonte */
+	color: #0084d5;	/* cor da fonte */
+	font-size: 50px; /* Tamanho da Fonte */
+	margin-bottom: 70px; /*define a margin area na parte inferior*/
+	-webkit-text-stroke-width: 1px;  /*Tamanho do Traçado*/
+   -webkit-text-stroke-color: rgb(255, 253, 253);/*cor do traçado*/
+	text-shadow: rgb(121, 121, 121) 0.1em 0.05em 0.1em; /*sombra*/
+	/* text-decoration: underline rgb(250, 249, 249);Cor do Sublinhado */
+}
+#mainSlider .carousel-caption p{
+	font-family: fonteFlorentia; /* tipo da fonte */
+	font-size: 15px;/* Tamanho da Fonte */
+	font-weight: 30px;
+	margin-bottom: 100px;/*define a margin area na parte inferior*/
+	color: #fdfdfd;	/* cor da fonte */
+	/* -webkit-text-stroke-width: 0.5px; Tamanho do Traçado */
+   /* -webkit-text-stroke-color: rgb(255, 253, 253);  */
+	/* text-shadow: rgb(121, 121, 121) 0.1em 0.05em 0.1em;  */
+	
+}
+.main-btn{
+	position:inherit;
+	top:80%;
+    left:40%;
+	background-color: #ff7900;
+	color: #FFF;
+	text-transform: uppercase;
+	width: 180px;
+	height: 50px;
+	padding: 10px 20px;
+	border-radius: 30px;
+	border: 3px solid transparent;
+	transition: .55;
+	
+}
+
+.main-btn:hover{
+	text-decoration: none;
+	color: #fff;
+	background: transparent;
+	border-color:#fff;
+}
+/* #services-area{ */
+	/* background-color: #dee4e2; */
+/* } */
+#para-area{
+	margin-top: -90px;
+}
+#download-area{
+	background: #fff;
+}
+
+#regioes-area{
+	background: #fff;
+}
+#corBotao{
+	color: #ff7900;
+	border-color:#ff7900;
+}
+#corBotao:hover{
+	text-decoration: none;
+	color: #fcfcfc;
+	background: #ff7900;
+	border-color:#fff;	
+}
+#img-regioes{
+	-webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+	-moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+	box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+}
+#regioes-area{
+	margin-top: -60px;
+}
+#download-area{
+	margin-top: -100px;
+}
+/* indicadores do slider */
+/* .carousel-indicators .active{ 
+	background-color: #79a112;
+} */
+
+/* Sobre a empresa */
+#about-area{
+	background-color: #F9F9F9;
+}
+.main-title{
+color: #444;
+margin: 0 0 65px 0;
+font-size: 40px;
+text-align: center;
+}
+/* linha d0s titulos */
+.main-title::after{ 
+	content: "";
+	border-top: 2px solid #ff7900;
+	width: 30%;
+	position: absolute;
+	top: 60px;
+	left: 35%;
+}
+.about-title{
+	font-size: 17px;
+	color: #444;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: justify;
+}
+
+.col-md-6 p{
+	text-align: justify;
+}
+
+#about-list{
+	list-style: none;
+	padding-left: 0;
+}
+#about-list li{
+	line-height: 30px;
+}
+#about-list i{
+	color: #ff7900;
+	margin-right: 15px;
+}
+.col-md-6 p a{
+	color: #ff7900;
+}
+
+/* radar  */
+.service-box{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.service-box p {
+	margin-top: 10px;
+	text-align: center;
+}
+
+/* Divisão */
+
+#divisao-area{
+	background-color: #0075dc; /* Troca a cor da divisão entre container */
+	height: 40px;
+}
+
+/* Equipe tecnico */
+#about-area{
+	margin-top: -120px;
+}
+
+#coordenacao-area{
+	background-color: #fdfdfd; 	/* Cor de fundo */
+}
+.card-title{
+	font-size: 15px; /* Tamanho da fonte do titulo do Card  */
+	text-align: center;/* alinhamento */
+}
+.card-text{
+	font-size: 12px; /* Tamanho da fonte do titulo do Card  */
+	text-align: center;
+}
+
+
+ /* contact */
+  .contact-box {
+    border: none;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+ /* final da pagina */
+
+	#rodape{
+		background: #0075dc; /* Cor do rodape */
+		font-size: 12px;
+	}
+
+	#rodape img{
+		border-radius: 10px; /* borda redonda das imagens do rodape */
+	}
+	h6{
+		font-size: 12px;
+	}
+
+	/* frame para o Modal */
+ iframe#frame{/* configura o iframe no index */
+	border: none;/*sem formatacao*/
+	width: 1080px;/*largura */
+	max-width: 100%;/*largura maxima */
+	height: 2000px;/*altura */
+	overflow-y: auto; 
+ 
+	} 
+
+/* Important part */
+.modal-dialog{
+    overflow-y: initial !important
+}
+.modal-body{
+    height: 1080px;
+    overflow-y: auto;
+}
+
+ /* Responsive */
+ /* @media only screen and (min-width:940px) and (max-width:1440px) { */
+@media screen and (max-width: 767px)	{
+	
+	.container{
+		padding: 20px 0;
+	}
+	
+	#mainSlider .carousel-inner, #mainSlider .carousel-item{
+		height: auto;
+	}
+	#mainSlider .carousel-caption h2{
+		font-size: 28px;
+	}
+	#mainSlider .carousel-caption p{
+		font-size: 18px;
+		margin-bottom: 40px;
+	}
+	.carousel-caption{
+		left: 10%;
+		right: 10%;
+	}
+
+	.main-btn{
+		position:absolute;
+		top:10%;
+    	left:40%;
+		background-color: #6ca7bd;
+		color: #FFF;
+		text-transform: uppercase;
+		width: 180px;
+		height: 50px;
+		padding: 10px 20px;
+		border-radius: 30px;
+		border: 3px solid transparent;
+		transition: .55;
+		
+	}
+
+	.main-btn:hover{
+		text-decoration: none;
+		color: #6ca7bd;
+		background: transparent;
+		border-color:#6ca7bd;
+	}
+	.main-title::after{ 
+		content: "";
+		border-top: 2px solid #6ca7bd;
+		width: 15%;
+		position: absolute;
+		top: 60px;
+		left: 42.5%;
+		
+	}
+
+	#about-area img{
+		margin-top: 100px;
+	}
+
+	.card-title{
+		font-size: 14px;
+
+	}
+	.card-text{
+		font-size: 10px;
+	}
+	
+	#rodape img{
+		border-radius: 10px; 
+		max-width: 200px;
+    	max-height:250px;
+	}
+	
+}
+
+@media (max-width: 768px) {/* estilo para tela menor */
+	#para-area{
+		margin-top: -10px;
+	}
+	#regioes-area{
+		margin-top: -10px;
+	}
+	#download-area{
+		margin-top: -10px;
+
+	}
+	/* .main-btn{
+		width: 100%;
+   		min-width: 50px;  
+   		max-width: 300px; 
+	} */
+}
+
+@media (max-width: 361px) {/* estilo para tela menor */
+	#para-area{
+		margin-top: -10px;
+	}
+	#regioes-area{
+		margin-top: -10px;
+	}
+	#download-area{
+		margin-top: -10px;
+
+	}
+	.main-btn{
+		position: absolute;
+		clip: rect(100px,100px,200px,0px);
+	}
+}	
+

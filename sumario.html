@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sumário - Pará no Contexto Nacional 2024</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/styleModal.css" rel="stylesheet">
+
+    <style>
+        /* Estilo para os itens principais (os títulos como DEMOGRAFIA, EDUCAÇÃO etc.) */
+        .formatar-li {
+            list-style-type: none;
+            /* Remove o bullet dos itens principais */
+            margin-left: 0;
+            /* Sem indentação adicional*/
+        }
+
+        /* Estilo para os subitens com bullets automáticos*/
+        .subitem {
+            list-style-type: disc;
+            /* Adiciona um bullet "disc" (círculo sólido) para os subitens */
+            margin-left: 20px;
+            /* Indentação para subitens */
+
+            text-align: left;
+        }
+
+        /* Alinha o texto à direita */
+        .align-right {
+            display: inline-block;
+            /* Permite o uso de largura */
+            width: 100%;
+            /* Ocupa toda a largura */
+            text-align: right;
+            /* Alinha o texto à direita */
+        }
+
+        .pagina {
+            display: none;
+            /* Oculta todas as páginas inicialmente */
+        }
+
+        .pagina-ativa {
+            display: block;
+            /* Mostra apenas a página ativa */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0">Pará no Contexto Nacional 2024</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <!-- <a href="#mapa" class="nav-item nav-link">Sumário</a> -->
+                    <a id="contato-menu" href="#footer" class="nav-item nav-link">Contato</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start (Imagem da Capa)-->
+    <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s"
+        style="background-image: url('img/PCN44.png'); background-size: cover; background-position: center; min-height: 300px;">
+        <div class="container text-center py-5">
+            <!-- <h1 class="display-3 text-white mb-4 animated slideInDown">Radar 2024</h1> -->
+        </div>
+    </div>
+
+    <!-- Page Header End -->
+
+
+    <section class="container pcn-page-intro">
+        <div class="pcn-page-intro-card">
+            <span class="pcn-kicker">PCN 2024</span>
+            <h1 class="pcn-page-title">Sumário</h1>
+            <p class="pcn-page-subtitle">Navegue pelos temas, veja a organização do conteúdo e acesse os indicadores do Pará no Contexto Nacional.</p>
+            <div class="pcn-stats-grid">
+                <div class="pcn-stat">
+                    <strong>16</strong>
+                    <span>Temas</span>
+                </div>
+                <div class="pcn-stat">
+                    <strong>2024</strong>
+                    <span>Edição</span>
+                </div>
+                <div class="pcn-stat">
+                    <strong>FAPESPA</strong>
+                    <span>Produção técnica</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Início da seção de Sumário do Radar de Indicadores -->
+    <div class="container-xxl py-5 wow fadeInUp pcn-shell" data-wow-delay="0.1s">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- <h1 class="mb-4">Radar Estatístico do Pará 2024</h1> -->
+                    <h1>Sumário</h1>
+                    <div class="pagina pagina-ativa">
+                        <ul class="list-unstyled text-start">
+                            <li class="formatar-li"><strong>I. DEMOGRAFIA</strong>
+                                <ul>
+                                    <li class="subitem">População Total - Estimativas Populacionais e Censo Demográfico
+                                        - 2020-2024 </li>
+                                    <li class="subitem">Densidade Demográfica - 2020-2024</li>
+                                    <li class="subitem">População por Faixa Etária - 2023</li>
+                                    <li class="subitem">Número de Eleitores - 2020-2024</li>
+                                    <li class="subitem">Expectativa de Vida ao Nascer - 2019-2023</li>
+                                    <li class="subitem">Taxa de Fecundidade Total - 2019-2023</li>
+                                    <li class="subitem">Razão de Dependência - 2019-2023</li>
+                                    <li class="subitem">Índice de Envelhecimento - 2019-2023</li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li><strong>II. EDUCAÇÃO</strong>
+                                <ul>
+                                    <p>
+                                        <li class="formatar-li"><strong>Educação Básica</strong>
+                                        <li class="subitem">Número de Matrículas na Creche - Ensino Regular por
+                                            Dependência Administrativa - 2019-2023</li>
+                                        <li class="subitem">Número de Matrículas na Pré-Escola - Ensino Regular por
+                                            Dependência Administrativa - 2019-2023</li>
+                                        <li class="subitem">Número de Matrículas no Ensino Fundamental - Ensino Regular
+                                            por Dependência Administrativa - 2019-2023</li>
+                                        <li class="subitem">Número de Matrículas no Ensino Médio - Ensino Regular por
+                                            Dependência Administrativa - 2019-2023</li>
+                                        <li class="subitem">Número de Matrículas na Educação Profissional - Ensino
+                                            Regular por Dependência Administrativa - 2019-2023</li>
+                                        <li class="subitem">Número de Estabelecimentos de Creche - Ensino Regular por
+                                            Dependência Administrativa - 2019-2023</li>
+                                        <li class="subitem">Número de Estabelecimentos de Pré-Escola - Ensino Regular
+                                            por Dependência Administrativa - 2019-2023</li>
+                                        <li class="subitem">Número de Estabelecimentos de Ensino Fundamental - Ensino
+                                            Regular por Dependência Administrativa - 2019-2023</li>
+                                        <li class="subitem">Número de Estabelecimentos de Ensino Médio - Ensino Regular
+                                            por Dependência Administrativa - 2019-2023</li>
+                                        <li class="subitem">Número de Estabelecimentos de Educação Profissional - Ensino
+                                            Regular por Dependência Administrativa - 2019-2023</li>
+                                        <li class="subitem">Taxa de Aprovação no Ensino Fundamental - 2019-2023</li>
+                                        <li class="subitem">Taxa de Reprovação no Ensino Fundamental - 2019-2023</li>
+                                        <li class="subitem">Taxa de Abandono no Ensino Fundamental - 2019-2023</li>
+                                        <li class="subitem">Taxa de Aprovação no Ensino Médio - 2019-2023</li>
+                                        <li class="subitem">Taxa de Reprovação no Ensino Médio - 2019-2023</li>
+                                        <li class="subitem">Taxa de Abandono no Ensino Médio - 2019-2023</li>
+                                        <li class="subitem">Nota IDEB na Rede de Ensino Pública - Séries Iniciais -
+                                            2013/2015/2017/2019/2021/2023</li>
+                                        <li class="subitem">Nota IDEB na Rede de Ensino Pública - Séries Finais -
+                                            2013/2015/2017/2019/2021/2023</li>
+                                        <li class="subitem">Nota IDEB na Rede de Ensino Estadual - Séries Iniciais -
+                                            2013/2015/2017/2019/2021/2023</li>
+                                        <li class="subitem">Nota IDEB na Rede de Ensino Estadual - Séries Finais -
+                                            2013/2015/2017/2019/2021/2023</li>
+                                        <br>
+
+                                        <li class="formatar-li"><strong>Educação Superior</strong>
+                                        <li class="subitem">Número de Instituições de Ensino Superior 2019-2023 </li>
+                                        <li class="subitem">Número de Docentes em Instituições de Ensino Superior
+                                            2019-2023</li>
+                                        <li class="subitem">Número de Cursos de Graduação Presenciais 2019-2023</li>
+                                        <li class="subitem">Número de Matrículas em Cursos de Graduação Presenciais em
+                                            Instituições de Ensino Superior 2019-2023</li>
+                                        <li class="subitem">Número de Concluintes em Cursos de Graduação Presenciais em
+                                            Instituições de Ensino Superior 2019-2023</li>
+                                        <li class="subitem">Número de Matrículas em Cursos de Graduação EAD 2019-2023
+                                        </li>
+                                        <li class="subitem">Número de Concluintes em Cursos de Graduação à Distancia
+                                            (Públicas e Privadas) - 2019-2023</li>
+                                </ul>
+
+                            </li>
+                            <br>
+                            <li class="formatar-li"><strong>III. SAÚDE</strong>
+                                <ul>
+                                    <li class="subitem">Taxa de Mortalidade Infantil - 2019-2023</li>
+                                    <li class="subitem">Taxa de Mortalidade na Infância - 2019-2023</li>
+                                    <li class="subitem">Taxa de Mortalidade Materna - 2019-2023</li>
+                                    <li class="subitem">Taxa de Natalidade - 2019-2023</li>
+                                    <li class="subitem">Taxa de Mortalidade Geral - 2019-2023</li>
+                                    <li class="subitem">Proporção de Mortes por Sexo - 2019-2023</li>
+                                    <li class="subitem">Hospitais por 10 Mil Habitantes - 2019-2023</li>
+                                    <li class="subitem">Postos e Centros de Saúde por 10 Mil Habitantes - 2019-2023</li>
+                                    <li class="subitem">Médicos por 10 Mil Habitantes - 2019-2023</li>
+                                    <li class="subitem">Leitos Hospitalares por Mil Habitantes - 2019-2023</li>
+                                    <li class="subitem">Percentual de Nascidos Vivos com 7 ou mais Consultas Pré-Natal -
+                                        2019-2023</li>
+                                    <li class="subitem">Percentual de Nascidos Vivos por Tipo de Parto - 2019-2023</li>
+                                    <li class="subitem">Percentual de Nascidos Vivos de Mães Adolescentes na Faixa
+                                        Etária de 10 a 19 anos - 2019-2023</li>
+                                    <li class="subitem">Óbitos por Neoplasias, segundo Brasil - 2019-2023</li>
+                                    <li class="subitem">Óbitos por Doenças Infecciosas e Parasitárias - 2019-2023</li>
+                                    <li class="subitem">Óbitos por Doenças do Aparelho Circulatório - 2019-2023</li>
+                                    <li class="subitem">Óbitos por Doenças do Aparelho Digestivo - 2019-2023</li>
+                                    <li class="subitem">Óbitos por Doenças do Aparelho Respiratório - 2019-2023</li>
+                                    <li class="subitem">Óbitos por Algumas Afecções Originadas no Período Perinatal -
+                                        2019-2023</li>
+                                    <li class="subitem">Taxa de Cobertura Populacional dos Agentes Comunitários de Saúde
+                                        - 2016-2020 (SÉRIE ENCERRADA)</li>
+                                    <li class="subitem">Taxa de Cobertura Populacional das Equipes de Saúde da Família -
+                                        2016-2020 (SÉRIE ENCERRADA)</li>
+                                    <li class="subitem">Taxa de Cobertura Populacional da Atenção Básica - 2021-2024
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <br>
+                            <li class="formatar-li"><strong>IV. INCLUSÃO SOCIAL</strong>
+                                <ul>
+                                    <li class="subitem">Famílias Cadastradas no Sistema CAD Único - 2020-2024</li>
+                                    <li class="subitem">Pessoas Cadastradas no Sistema CAD Único - 2020-2024</li>
+                                    <li class="subitem">Famílias Beneficiadas do Programa Bolsa Família - 2019-2024</li>
+                                    <li class="subitem">Valor Aplicado no Programa Bolsa Família (R$) - 2020-2024</li>
+                                    <li class="subitem">Famílias Cadastradas no Programa Auxílio Brasil - 2021-2023</li>
+                                    <li class="subitem">Valor Aplicado no Programa Auxílio Brasil - 2021-2023</li>
+
+                                </ul>
+                            </li>
+                            <br>
+                            <li class="formatar-li"><strong>V. PREVIDÊNCIA SOCIAL</strong>
+                                <ul>
+                                    <li class="subitem">Número de Benefícios previdenciários Emitidos - 2019-2023</li>
+                                    <li class="subitem">Número de Benefícios previdenciários Emitidos Urbano - 2019-2023
+                                    </li>
+                                    <li class="subitem">Número de Benefícios previdenciários Emitidos Rural - 2019-2023
+                                    </li>
+                                    <li class="subitem">Valor Aplicado em Benefícios previdenciários Emitidos Total (R$
+                                        Mil) - 2019-2023</li>
+                                    <li class="subitem">Valor Aplicado em Benefícios previdenciários Emitidos Urbano (R$
+                                        Mil) - 2019-2023</li>
+                                    <li class="subitem">Valor Aplicado em Benefícios previdenciários Emitidos Rural (R$
+                                        Mil) - 2019-2023</li>
+                                    <li class="subitem">Valor Arrecado pela Previdência Social (R$ Mil) - 2015-2019</li>
+
+                                </ul>
+                            </li>
+                            <br>
+                            <li class="formatar-li"><strong>VI. SEGURANÇA</strong>
+                                <ul>
+                                    <li class="subitem">Taxa de Homicídios Total por 100.000 habitantes - 2019-2023</li>
+                                    <li class="subitem">Taxa de Homicídios de Jovens (15 a 29 anos) por 100.000 Jovens -
+                                        2019-2023</li>
+                                    <li class="subitem">Taxa de Acidentes no Trânsito por 100.000 habitantes - 2019-2023
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <br>
+                            <li class="formatar-li"><strong>VII. HABITAÇÃO E SANEAMENTO</strong>
+                                <ul>
+                                    <li class="subitem">Percentual de Domicílios com Rede Geral de Distribuição de Água
+                                        - 2016-2022</li>
+                                    <li class="subitem">Percentual de Domicílios com Esgotamento Sanitário por Rede
+                                        Geral ou Fossa Ligada à Rede - 2016-2022</li>
+                                    <li class="subitem">Percentual de Domicílios com Coleta Direta e Indireta de Lixo -
+                                        2016-2022</li>
+                                    <li class="subitem">Percentual de Domicílios com Materiais Duráveis - 2016-2022</li>
+                                    <li class="subitem">Percentual de Domicílios Próprios já Quitados - 2016-2022</li>
+                                    <li class="subitem">Percentual de domicílios que possuem banheiro de uso exclusivo -
+                                        2016-2022</li>
+
+                                </ul>
+                            </li>
+                            <br>
+                            <li class="formatar-li"><strong>VIII. MERCADO DE TRABALHO</strong>
+                                <ul>
+                                    <li class="subitem">Número de Vínculos Total - 2018-2022</li>
+                                    <li class="subitem">Número de Vínculos por Sexo - 2018-2022</li>
+                                    <li class="subitem">Número de Vínculos por Grande Setor - 2018-2022</li>
+                                    <li class="subitem">Remuneração Média do Trabalhador - 2018-2022</li>
+                                    <li class="subitem">Remuneração Média do Trabalhador por Sexo - 2018-2022</li>
+                                    <li class="subitem">Número de Estabelecimentos - 2018-2022</li>
+                                    <li class="subitem">Número de Estabelecimentos por Grande Setor - 2018-2022</li>
+                                    <li class="subitem">Condição em relação à força de trabalho - 2018-2022</li>
+                                    <li class="subitem">População Ocupada e Desocupada - 2018-2022</li>
+                                    <li class="subitem">Taxa de Ocupação - 2018-2022</li>
+                                    <li class="subitem">Taxa de Desocupação - 2018-2022</li>
+
+                                </ul>
+                            </li>
+                            <br>
+                            <li><strong>IX. ECONOMIA</strong>
+                                <ul>
+                                    <li class="formatar-li"><strong>Agricultura</strong>
+                                    <li class="subitem">Quantidade Produzida e Valor da Produção de Abacaxi (em
+                                        toneladas) - 2019-2023</li>
+                                    <li class="subitem">Quantidade Produzida e Valor da Produção de Arroz (em casca) (em
+                                        toneladas) - 2019-2023</li>
+                                    <li class="subitem">Quantidade Produzida e Valor da Produção de Feijão (em grão) (em
+                                        toneladas) - 2019-2023</li>
+                                    <li class="subitem">Quantidade Produzida e Valor da Produção de Mandioca (em
+                                        toneladas) - 2019-2023</li>
+                                    <li class="subitem">Quantidade Produzida e Valor da Produção de Milho (em grão) (em
+                                        toneladas) - 2019-2023</li>
+                                    <li class="subitem">Quantidade Produzida e Valor da Produção de Soja (em grão) (em
+                                        toneladas) - 2019-2023</li>
+                                    <li class="subitem">Quantidade Produzida e Valor da Produção de Açaí - 2019-2023
+                                    </li>
+                                    <li class="subitem">Quantidade Produzida e Valor da Produção de Banana - 2019-2023
+                                    </li>
+                                    <li class="subitem">Quantidade Produzida e Valor da Produção de Cacau - 2019-2023
+                                    </li>
+                                    <li class="subitem">Quantidade Produzida e Valor da Produção de Coco-da-baía -
+                                        2019-2023</li>
+                                    <li class="subitem">Quantidade Produzida e Valor da Produção de Dendê - 2019-2023
+                                    </li>
+                                    <li class="subitem">Quantidade Produzida e Valor da Produção de Pimenta-do-reino -
+                                        2019-2023</li>
+
+                                    <br>
+                                    <li class="formatar-li"><strong>Extrativismo Vegetal e Silvicultura</strong>
+                                    <li class="subitem">Quantidade Produzida (Toneladas) e Valor da Produção (Mil Reais)
+                                        do Total de Produtos Alimentícios da Extração Vegetal - 2019-2023</li>
+                                    <li class="subitem">Quantidade Produzida (Toneladas) e Valor da Produção (Mil Reais)
+                                        de Açaí na Extração Vegetal - 2019-2023</li>
+                                    <li class="subitem">Quantidade Produzida (Toneladas) e Valor da Produção (Mil Reais)
+                                        de Castanha-do-Pará na Extração Vegetal - 2019-2023</li>
+                                    <li class="subitem">Quantidade Produzida (Toneladas) e Valor da Produção (Mil Reais)
+                                        de Palmito na Extração Vegetal - 2019-2023</li>
+                                    <li class="subitem">Quantidade Produzida (Toneladas) e Valor da Produção (Mil Reais)
+                                        de Fibras na Extração Vegetal - 2019-2023</li>
+                                    <li class="subitem">Quantidade Produzida (Toneladas) e Valor da Produção (Mil Reais)
+                                        de Carvão Vegetal na Extração Vegetal - 2019-2023</li>
+                                    <li class="subitem">Quantidade Produzida (Toneladas) e Valor da Produção (Mil Reais)
+                                        de Lenha na Extração Vegetal - 2019-2023</li>
+                                    <li class="subitem">Quantidade Produzida (Toneladas) e Valor da Produção (Mil Reais)
+                                        de Madeira em Tora na Extração Vegetal - 2019-2023</li>
+                                    <li class="subitem">Quantidade Produzida (Toneladas) e Valor da Produção (Mil Reais)
+                                        de Oleaginosos na Extração Vegetal - 2019-2023</li>
+                                    <li class="subitem">Quantidade Produzida (Toneladas) e Valor da Produção (Mil Reais)
+                                        de Carvão Vegetal da Silvicultura - 2019-2023</li>
+                                    <li class="subitem">Quantidade Produzida (Toneladas) e Valor da Produção (Mil Reais)
+                                        de Lenha da Silvicultura - 2019-2023</li>
+                                    <li class="subitem">Quantidade Produzida (Toneladas) e Valor da Produção (Mil Reais)
+                                        de Madeira em Tora da Silvicultura - 2019-2023</li>
+
+                                    <br>
+                                    <li class="formatar-li"><strong>Pecuária</strong>
+                                    <li class="subitem">Efetivo de Rebanho Bovino - 2019-2023</li>
+                                    <li class="subitem">Efetivo de Rebanho Bubalino - 2019-2023</li>
+                                    <li class="subitem">Efetivo de Rebanho Suíno Total - 2019-2023</li>
+                                    <li class="subitem">Efetivo de Rebanho de Galináceos Total - 2019-2023</li>
+                                    <li class="subitem">Abate de Frangos (Cabeças) - 2019-2023</li>
+                                    <li class="subitem">Abate de Rebanho Bovino (Cabeças) - 2019-2023</li>
+                                    <li class="subitem">Abate de Rebanho Suíno (Cabeças) - 2019-2023</li>
+                                    <li class="subitem">Produção de Leite (Mil Litros) e Valor da Produção (Mil Reais) -
+                                        2019-2023</li>
+                                    <li class="subitem">Produção de Ovos de Galinha (Mil Dúzias) e Valor da Produção
+                                        (Mil Reais) - 2019-2023</li>
+                                    <li class="subitem">Produção de Ovos de Codorna (Mil Dúzias) e Valor da Produção
+                                        (Mil Reais) - 2019-2023</li>
+                                    <li class="subitem">Produção de Mel de Abelha (Quilogramas) e Valor da Produção (Mil
+                                        Reais) - 2019-2023</li>
+
+                                    <br>
+                                    <li class="formatar-li"><strong>Indústria</strong>
+                                    <li class="subitem">Total da Indústria - Número de unidades locais (unidades) -
+                                        2018-2022</li>
+                                    <li class="subitem">Total da Indústria - Pessoal ocupado em 31/12 (Pessoas) -
+                                        2018-2022</li>
+                                    <li class="subitem">Total da Indústria - Salários, retiradas e outras remunerações
+                                        (Mil Reais) - 2018-2022</li>
+                                    <li class="subitem">Total da Indústria - Receitas líquidas de vendas (Mil Reais) -
+                                        2018-2022</li>
+                                    <li class="subitem">Total da Indústria - Custos das Operações Industriais (Mil
+                                        Reais) - 2018-2022</li>
+                                    <li class="subitem">Total da Indústria - Valor bruto da produção industrial (Mil
+                                        Reais) - 2018-2022</li>
+                                    <li class="subitem">Indústrias Extrativas - Número de unidades locais (unidades) -
+                                        2018-2022</li>
+                                    <li class="subitem">Indústrias Extrativas - Pessoal ocupado em 31/12 (Pessoas) -
+                                        2018-2022</li>
+                                    <li class="subitem">Indústrias Extrativas - Salários, retiradas e outras
+                                        remunerações (Mil Reais) - 2018-2022</li>
+                                    <li class="subitem">Indústrias Extrativas - Receitas líquidas de vendas (Mil Reais)
+                                        - 2018-2022</li>
+                                    <li class="subitem">Indústrias Extrativas - Custos das operações industriais (Mil
+                                        Reais) - 2018-2022</li>
+                                    <li class="subitem">Indústrias Extrativas - Valor bruto da produção industrial (Mil
+                                        Reais) - 2018-2022</li>
+                                    <li class="subitem">Indústrias de Transformação - Número de unidades locais
+                                        (unidades) - 2018-2022</li>
+                                    <li class="subitem">Indústrias de Transformação - Pessoal ocupado em 31/12 (Pessoas)
+                                        - 2018-2022</li>
+                                    <li class="subitem">Indústrias de Transformação - Salários, retiradas e outras
+                                        remunerações (Mil Reais) - 2018-2022</li>
+                                    <li class="subitem">Indústrias de Transformação - Receitas líquidas de vendas (Mil
+                                        Reais) - 2018-2022</li>
+                                    <li class="subitem">Indústrias de Transformação - Custos das operações industriais -
+                                        2018-2022</li>
+                                    <li class="subitem">Indústrias de Transformação - Valor bruto da produção industrial
+                                        (Mil Reais) - 2018-2022</li>
+                                    <br>
+
+                                    <li class="formatar-li"><strong>Serviços</strong>
+                                    <li class="subitem">Total de Serviço - Número de empresas (Unidades) - 2018-2022
+                                    </li>
+                                    <li class="subitem">Total de Serviço - Pessoal ocupado em 31/12 (Pessoas) -
+                                        2018-2022</li>
+                                    <li class="subitem">Total de Serviço - Receita bruta de serviços (Mil Reais) -
+                                        2018-2022</li>
+                                    <li class="subitem">Total de Serviço - Salários, retiradas e outras remunerações
+                                        (Mil Reais) - 2018-2022</li>
+                                    <li class="subitem">Serviços à Família - Número de empresas (Unidades) - 2018-2022
+                                    </li>
+                                    <li class="subitem">Serviços à Família - Pessoal ocupado em 31/12 (Pessoas) -
+                                        2018-2022</li>
+                                    <li class="subitem">Serviços à Família - Receita bruta de serviços (Mil Reais) -
+                                        2018-2022</li>
+                                    <li class="subitem">Serviços à Família - Salários, retiradas e outras remunerações
+                                        (Mil Reais) - 2018-2022</li>
+                                    <li class="subitem">Serviços de Informação e comunicação - Número de empresas
+                                        (Unidades) - 2018-2022</li>
+                                    <li class="subitem">Serviços de Informação e comunicação - Pessoal ocupado em 31/12
+                                        (Pessoas) - 2018-2022</li>
+                                    <li class="subitem">Serviços de Informação e comunicação - Receita bruta de serviços
+                                        (Mil Reais) - 2018-2022</li>
+                                    <li class="subitem">Serviços de Informação e comunicação - Salários, retiradas e
+                                        outras remunerações (Mil Reais) - 2018-2022</li>
+                                    <li class="subitem">Serviços Profissionais, administrativos e complementares -
+                                        Número de empresas (Unidades) - 2018-2022</li>
+                                    <li class="subitem">Serviços Profissionais, administrativos e complementares -
+                                        Pessoal ocupado em 31/12 (Pessoas) - 2018-2022</li>
+                                    <li class="subitem">Serviços Profissionais, administrativos e complementares -
+                                        Receita bruta de serviços (Mil Reais) - 2018-2022</li>
+                                    <li class="subitem">Serviços Profissionais, administrativos e complementares -
+                                        Salários, retiradas e outras remunerações (Mil Reais) - 2018-2022</li>
+                                    <li class="subitem">Transportes, serviços auxiliares aos transportes e correio -
+                                        Número de empresas (Unidades) - 2018-2022</li>
+                                    <li class="subitem">Transportes, serviços auxiliares aos transportes e correio -
+                                        Pessoal ocupado em 31/12 (Pessoas) - 2018-2022</li>
+                                    <li class="subitem">Transportes, serviços auxiliares aos transportes e correio -
+                                        Receita bruta de serviços (Mil Reais) - 2018-2022</li>
+                                    <li class="subitem">Transportes, serviços auxiliares aos transportes e correio -
+                                        Salários, retiradas e outras remunerações (Mil Reais) - 2018-2022</li>
+                                    <li class="subitem">Atividades Imobiliárias - Número de empresas (Unidades) -
+                                        2018-2022</li>
+                                    <li class="subitem">Atividades Imobiliárias - Pessoal ocupado em 31/12 (Pessoas) -
+                                        2018-2022</li>
+                                    <li class="subitem">Atividades Imobiliárias - Receita bruta de serviços (Mil Reais)
+                                        - 2018-2022</li>
+                                    <li class="subitem">Atividades Imobiliárias - Salários, retiradas e outras
+                                        remunerações (Mil Reais) - 2018-2022</li>
+                                    <li class="subitem">Serviços de Manutenção e reparação - Número de empresas
+                                        (Unidades) - 2018-2022</li>
+                                    <li class="subitem">Serviços de Manutenção e reparação - Pessoal ocupado em 31/12
+                                        (Pessoas) - 2018-2022</li>
+                                    <li class="subitem">Serviços de Manutenção e reparação - Receita bruta de serviços
+                                        (Mil Reais) - 2018-2022</li>
+                                    <li class="subitem">Serviços de Manutenção e reparação - Salários, retiradas e
+                                        outras remunerações (Mil Reais) - 2018-2022</li>
+                                    <br>
+
+                                    <li class="formatar-li"><strong>Construção Civil</strong>
+                                    <li class="subitem">Empresas de construção - Número de empresas ativas (Unidades) -
+                                        2018-2022</li>
+                                    <li class="subitem">Empresas de construção - Pessoal ocupado em 31/12 (Pessoas) -
+                                        2018-2022</li>
+                                    <li class="subitem">Empresas de construção - Custos das obras e/ou serviços da
+                                        construção (Mil Reais) - 2018-2022</li>
+                                    <li class="subitem">Empresas de construção - Valor bruto da produção (Mil Reais) -
+                                        2018-2022</li>
+                                    <li class="subitem">Empresas de construção - Receita líquida (Mil Reais) - 2018-2022
+                                    </li>
+                                    <li class="subitem">Empresas de construção - Salários, retiradas e outras
+                                        remunerações (Mil Reais) - 2018-2022</li>
+                                    <br>
+
+                                    <li class="formatar-li"><strong>Comércio</strong>
+                                    <li class="subitem">Total de Comércio - Número de unidades locais com receita de
+                                        revenda (Unidades) 2018-2022</li>
+                                    <li class="subitem">Total de Comércio - Pessoal ocupado em 31/12 em empresas
+                                        comerciais (Pessoas) 2018-2022</li>
+                                    <li class="subitem">Total de Comércio - Gastos com salários, retiradas e outras
+                                        remunerações em empresas comerciais (Mil Reais) 2018-2022</li>
+                                    <li class="subitem">Total de Comércio - Receita bruta de revenda de mercadorias (Mil
+                                        Reais) 2018-2022</li>
+                                    <li class="subitem">Comércio de veículos, peças e motocicletas - Número de unidades
+                                        locais com receita de revenda (Unidades) - 2018-2022</li>
+                                    <li class="subitem">Comércio de veículos, peças e motocicletas - Pessoal ocupado em
+                                        31/12 em empresas comerciais (Pessoas) - 2018-2022</li>
+                                    <li class="subitem">Comércio de veículos, peças e motocicletas - Gastos com
+                                        salários, retiradas e outras remunerações em empresas comerciais (Mil Reais) -
+                                        2018-2022</li>
+                                    <li class="subitem">Comércio de veículos, peças e motocicletas - Receita bruta de
+                                        revenda de mercadorias (Mil Reais) - 2018-2022</li>
+                                    <li class="subitem">Comércio por atacado - Número de unidades locais com receita de
+                                        revenda (Unidades) 2018-2022</li>
+                                    <li class="subitem">Comércio por atacado - Pessoal ocupado em 31/12 em empresas
+                                        comerciais (Pessoas) - 2018-2022</li>
+                                    <li class="subitem">Comércio por atacado - Gastos com salários, retiradas e outras
+                                        remunerações em empresas comerciais (Mil Reais) - 2018-2022</li>
+                                    <li class="subitem">Comércio por atacado - Receita bruta de revenda de mercadorias
+                                        (Mil Reais) - 2018-2022</li>
+                                    <li class="subitem">Comércio varejista - Número de unidades locais com receita de
+                                        revenda (Unidades) - 2018-2022</li>
+                                    <li class="subitem">Comércio varejista - Pessoal ocupado em 31/12 em empresas
+                                        comerciais (Pessoas) - 2018-2022</li>
+                                    <li class="subitem">Comércio varejista - Gastos com salários, retiradas e outras
+                                        remunerações em empresas comerciais (Mil Reais) - 2018-2022</li>
+                                    <li class="subitem">Comércio varejista - Receita bruta de revenda de mercadorias
+                                        (Mil Reais) - 2018-2022</li>
+                                    <br>
+                                </ul>
+                            </li>
+                            <br>
+                            <li class="formatar-li"><strong>X. PRODUTO INTERNO BRUTO</strong>
+                                <ul>
+                                    <li class="subitem">Produto Interno Bruto (valores correntes) - 2018-2022</li>
+                                    <li class="subitem">Participação no Produto Interno Bruto 2018-2022</li>
+                                    <li class="subitem">Crescimento Real do Produto Interno Bruto - 2018-2022</li>
+                                    <li class="subitem">Valor Adicionado Bruto Total - 2018-2022</li>
+                                    <li class="subitem">Impostos sobre produtos, líquidos de subsídios - 2018-2022</li>
+                                    <li class="subitem">Produto Interno Bruto Per Capita (valores correntes) - 2018-2022
+                                    </li>
+                                    <li class="subitem">Valor Adicionado Bruto do Setor Agropecuário - 2018-2022</li>
+                                    <li class="subitem">Valor Adicionado Bruto do Setor Industrial - 2018-2022</li>
+                                    <li class="subitem">Valor Adicionado Bruto do Setor de Serviços - 2018-2022</li>
+                                    <li class="subitem">Valor Adicionado Bruto da Administração Pública - 2018-2022</li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li class="formatar-li"><strong>XI. FINANÇAS PÚBLICAS</strong>
+                                <ul>
+                                    <li class="subitem">Receita Orçamentária Total (Mil R$) - 2019-2023</li>
+                                    <li class="subitem">Receita Correntes (Mil R$) - 2019-2023</li>
+                                    <li class="subitem">Receitas de Transferências Correntes (Mil R$) - 2019-2023</li>
+                                    <li class="subitem">Despesa Total - Empenhada (R$) - Preços Correntes - 2019-2023
+                                    </li>
+                                    <li class="subitem">Despesas com Pessoal e Encargos Sociais - Empenhada (R$) -
+                                        Preços Correntes - 2019-2023</li>
+                                    <li class="subitem">Despesas com Investimentos - Empenhada (R$) - Preços Correntes -
+                                        2019-2023</li>
+                                    <li class="subitem">Transferências Constitucionais - FPE - 2019-2023</li>
+                                    <li class="subitem">Transferências Constitucionais - FUNDEB - 2019-2023</li>
+                                    <li class="subitem">Transferências Constitucionais - IPI-EXP - 2019-2023</li>
+                                    <li class="subitem">Transferências Constitucionais - LC 87-96 Lei Kandir - 2014-2018
+                                    </li>
+                                    <li class="subitem">Arrecadação do ICMS - 2019-2023</li>
+                                    <li class="subitem">Arrecadação do IPVA - 2019-2023</li>
+
+                                </ul>
+                            </li>
+                            <br>
+                            <li class="formatar-li"><strong>XII. BALANÇA COMERCIAL</strong>
+                                <ul>
+                                    <li class="subitem">Exportação (US$) - 2019-2023</li>
+                                    <li class="subitem">Importação (US$) - 2019-2023</li>
+                                    <li class="subitem">Saldo da Balança Comercial (US$) - 2019-2023</li>
+
+                                </ul>
+                            </li>
+                            <br>
+                            <li class="formatar-li"><strong>XIII. MEIO AMBIENTE</strong>
+                                <ul>
+                                    <li class="subitem">Taxa de Desflorestamento Anual 2019-2023</li>
+                                    <li class="subitem">Degradação Florestal na Amazônia Legal 2012-2016</li>
+                                    <li class="subitem">Área de Floresta e Hidrografia (km²) 2019-2023</li>
+                                    <li class="subitem">Focos de Calor 2019-2023</li>
+
+                                </ul>
+                            </li>
+                            <br>
+                            <li class="formatar-li"><strong>XIV. CIÊNCIA E TECNOLOGIA</strong>
+                                <ul>
+                                    <li class="subitem">Total dos investimentos realizados em bolsas (R$ Mil) e no
+                                        fomento à pesquisa - 2013-2017</li>
+                                    <li class="subitem">Número de Bolsas de Estudo no País e no Exterior 2013-2017</li>
+                                    <li class="subitem">Investimentos realizados em bolsas e no fomento à pesquisa per
+                                        capita (R$) 2013-2017</li>
+                                    <li class="subitem">Número de Doutores - 2006-2008-2010-2014-2016</li>
+                                    <li class="subitem">Número de doutores por 100.000 habitantes -
+                                        2006-2008-2010-2014-2016</li>
+                                    <li class="subitem">Dispêndios dos Governos Estaduais em Ciência e Tecnologia
+                                        2018-2022</li>
+                                    <li class="subitem">Percentual dos Dispêndios em Ciência e Tecnologia - 2018-2022
+                                    </li>
+                                    <li class="subitem">Dispêndios dos Governos Estaduais em Pesquisa e Desenvolvimento
+                                        - 2018-2022</li>
+                                    <li class="subitem">Percentual dos Dispêndios em Pesquisa e Desenvolvimento -
+                                        2018-2022</li>
+                                    <li class="subitem">Estimativa dos Dispêndios em Pesquisa e Desenvolvimento das Instituições
+                                        Estaduais de Ensino Superior 2018-2022</li>
+                                    <li class="subitem">Investimento da CAPES em bolsa e fomento 2019-2023</li>
+                                    <li class="subitem">Concessão de Bolsas de Pós-Graduação da CAPES 2019-2023</li>
+                                    <li class="subitem">Concessão de Bolsas de Doutorado da CAPES 2019-2023</li>
+                                    <li class="subitem">Concessão de Bolsas de Mestrado da CAPES 2019-2023</li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li class="formatar-li"><strong>XV. INFRAESTRUTURA</strong>
+                                <ul>
+                                    <li class="subitem">Frota de veículos Emplacados - 2019-2023</li>
+                                    <li class="subitem">Energia Elétrica (cobertura domiciliar) - 2016-2022</li>
+                                    <li class="subitem">Consumo Total de Energia Elétrica (GWh) - 2019-2023</li>
+                                    <li class="subitem">Consumo Residencial de Eletricidade (GWh) - 2019-2023</li>
+                                    <li class="subitem">Consumo Comercial de Eletricidade (GWh) - 2019-2023</li>
+                                    <li class="subitem">Consumo Industrial de Eletricidade (GWh) - 2019-2023</li>
+                                    <li class="subitem">Outros Consumos de Eletricidade (GWh) - 2019-2023</li>
+                                    <li class="subitem">Consumidores Totais de Energia Elétrica - 2019-2023</li>
+                                    <li class="subitem">Consumidores Residenciais de Eletricidade (GWh) - 2019-2023</li>
+                                    <li class="subitem">Consumidores Comerciais de Eletricidade (GWh) - 2019-2023</li>
+                                    <li class="subitem">Consumidores Industriais de Eletricidade (GWh) - 2019-2023</li>
+                                    <li class="subitem">Outros Consumidores de Eletricidade (GWh) - 2019-2023</li>
+                                    <li class="subitem">Geração de Energia Elétrica (GWh) - 2019-2023</li>
+                                    <li class="subitem">Percentual de Domicílios com Canalização Interna - 2017-2023
+                                    </li>
+                                    <li class="subitem">Percentual de domicílios com existência de utilização de
+                                        Internet - 2017-2023</li>
+
+                                </ul>
+                            </li>
+                            <br>
+                            <li class="formatar-li"><strong>XVI. TERRITÓRIO</strong>
+                                <ul>
+                                    <li class="subitem">Número de Município e Área Territorial - 2022</li>
+                                    <li class="subitem">Número de Unidades Territoriais Existentes - 2010</li>
+
+                                </ul>
+
+                        </ul>
+                    </div>
+                    <br>
+                    </ul>
+                    <!-- <a class="btn btn-primary py-3 px-4" href="index.html">Voltar para a Página Inicial</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navegação -->
+    <!-- <nav class="d-flex justify-content-center mt-4">
+        <ul class="pagination">
+            <li class="page-item">
+                <button class="page-link" onclick="mudarPagina(-1)">Anterior</button>
+            </li>
+            <li class="page-item disabled">
+                <span id="contador-pagina" class="page-link">Página 1</span>
+            </li>
+            <li class="page-item">
+                <button class="page-link" onclick="mudarPagina(1)">Próxima</button>
+            </li>
+        </ul>
+    </nav> -->
+
+    <!-- Footer Start -->
+    <div id="footer" class="container-fluid footer-main mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Endereço</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Endereço: Avenida Presidente Vargas, nº
+                        670. Belém - PA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i> <strong>Telefone:</strong> Fone:
+                        (91)3323-2550
+                    </p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i><strong>Horário:</strong> 8h às 14h<br></p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="https://www.instagram.com/fapespa/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <!-- <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
+                                class="fab fa-linkedin-in"></i></a> -->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Produtos</h4>
+                    <a class="btn btn-link" href="https://www.fapespa.pa.gov.br/anuario-estatistico-do-para-2/"
+                        target="_blank">Anuário
+                        Estatístico</a>
+                    <a class="btn btn-link" href="https://www.fapespa.pa.gov.br/radar-de-indicadores-das-ri/"
+                        target="_blank">Radar de
+                        Indicadores das Regiões de Integração</a>
+                    <a class="btn btn-link" href="https://www.fapespa.pa.gov.br/para-no-contexto-nacional-2/"
+                        target="_blank">Pará no
+                        Contexto
+                        Nacional</a>
+                    <a class="btn btn-link" href="https://www.fapespa.pa.gov.br/estatistica-municipal/"
+                        target="_blank">Estatística
+                        Municipal</a>
+                    <a class="btn btn-link" href="https://www.fapespa.pa.gov.br/para-em-numeros/" target="_blank">Pará
+                        em Números</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Links Úteis</h4>
+                    <a class="btn btn-link" href="https://www.pa.gov.br/" target="_blank">
+                        Governo do Estado do Pará</a>
+                    <a class="btn btn-link" href="https://www.fapespa.pa.gov.br/" target="_blank">FAPESPA</a>
+                    <!-- <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a> -->
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">FAPESPA</h4>
+                    <p>Fundação Amazônia de Amparo a Estudos e Pesquisas.</p>
+                    <div class="position-relative w-100">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5362681158094!2d-48.498285788249284!3d-1.4525314985276918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48f110f9ae615%3A0xcf262f614c25afcd!2sFAPESPA%20-%20Funda%C3%A7%C3%A3o%20Amaz%C3%B4nia%20de%20Amparo%20a%20Estudos%20e%20Pesquisas!5e0!3m2!1spt-BR!2sbr!4v1698156248379!5m2!1spt-BR!2sbr"
+                            width="300" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid footer-copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">PCN 2024</a>, Todos os direitos reservados.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="border-bottom" href="https://www.fapespa.pa.gov.br/">Fapespa</a>
+                    <!-- Distributed By <a href="https://themewagon.com">ThemeWagon</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
