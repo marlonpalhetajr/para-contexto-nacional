@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -9,7 +9,7 @@
     <meta content="" name="description">
     
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/logo-para1.png" rel="icon" type="image/png">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,27 +19,21 @@
         rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Lightbox CSS -->
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<!-- Lightbox CSS -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"> -->
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-
-   
+  <link href="css/anuario-template.css" rel="stylesheet">
+  <link href="css/pcn-content.css" rel="stylesheet"><link href="css/responsive.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="pcn-maps-page">
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -49,37 +43,9 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h1 class="m-0">FAPESPA</h1>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="#mapa" class="nav-item nav-link">Mapas</a>
-                <a href="#footer1" class="nav-item nav-link">Contato</a>
-            </div>
-        </div>
-    </nav>
+    <!-- PCN NAV START --><nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0" id="navbar" aria-label="Navegação principal"><a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5"><h1 class="m-3">FAPESPA</h1></a><button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Alternar navegação"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarCollapse"><ul class="navbar-nav ms-auto p-4 p-lg-0"><li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="index.html#pcn">PCN</a></li><li class="nav-item"><a class="nav-link" href="index.html#sobre">Sobre</a></li><li class="nav-item"><a class="nav-link" href="index.html#contato">Contato</a></li><li class="nav-item position-relative"><button id="acess-open-btn" class="nav-link border-0 bg-transparent" type="button" title="Acessibilidade" aria-controls="acessibilidadeMenu" aria-expanded="false"><i class="bi bi-universal-access" aria-hidden="true"></i> <span class="d-none d-lg-inline">Acessibilidade</span></button><div id="acessibilidadeMenu" class="acess-dropdown" hidden><div class="acess-section-title">Visão</div><div class="acess-row"><button id="acess-contrast" class="acess-control" type="button">Alto contraste</button><button id="acess-night" class="acess-control" type="button">Modo noturno</button></div><div class="acess-section-title">Cores</div><div class="acess-row"><button id="acess-grayscale" class="acess-control" type="button">Escala em cinza</button></div><div class="acess-section-title">Tamanho da fonte</div><div class="acess-row"><button id="font-dec" class="acess-control" type="button">A-</button><button id="font-reset" class="acess-control" type="button">A</button><button id="font-inc" class="acess-control" type="button">A+</button></div><div class="acess-section-title">Daltonismo</div><div class="acess-row"><button id="dalton-prot" class="acess-control" type="button">Protanopia</button><button id="dalton-deut" class="acess-control" type="button">Deuteranopia</button><button id="dalton-trit" class="acess-control" type="button">Tritanopia</button><button id="dalton-off" class="acess-control" type="button">Normal</button></div><div class="acess-section-title">Leitura e legibilidade</div><div class="acess-row"><button id="acess-dislexia" class="acess-control" type="button">Modo dislexia</button><button id="acess-reading" class="acess-control" type="button">Modo leitura</button><button id="acess-links" class="acess-control" type="button">Destacar links</button></div><div class="acess-section-title">Movimento</div><div class="acess-row"><button id="reduce-motion" class="acess-control" type="button">Reduzir animações</button></div><div class="acess-section-title">Geral</div><div class="acess-row"><button id="acess-reset" class="acess-control acess-reset" type="button">Restaurar tudo</button></div></div></li></ul></div></nav><!-- PCN NAV END -->
     <!-- Navbar End -->
-
-
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container text-center py-5">
-            <!-- <h1 class="display-3 text-white mb-4 animated slideInDown">Mapas</h1> -->
-            <nav aria-label="breadcrumb animated slideInDown">
-
-            </nav>
-        </div>
-    </div>
-    <!-- Page Header End -->
-
-
-    <!-- Projects Start -->
+<!-- Projects Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto "  style="max-width: 500px;">
@@ -123,10 +89,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/01_demografia/Demografia_Estimativas_Populacionais_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/01_demografia/Demografia_Estimativas_Populacionais_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -140,10 +106,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/01_demografia/Demografia_Densidade_Demografica_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/01_demografia/Demografia_Densidade_Demografica_2024.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -157,10 +123,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/01_demografia/Demografia_Numeros_de_Eleitores_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/01_demografia/Demografia_Numeros_de_Eleitores_2024.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -180,10 +146,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/02_educacao/1-educacao_basica/EDUCAcaO_IDEB_SeriesIniciais2023.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/02_educacao/1-educacao_basica/EDUCAcaO_IDEB_SeriesIniciais2023.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -197,10 +163,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/02_educacao/1-educacao_basica/EDUCAcaO_IDEB_SeriesFinais2023.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/02_educacao/1-educacao_basica/EDUCAcaO_IDEB_SeriesFinais2023.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -215,10 +181,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/02_educacao/1-educacao_basica/EDUCAcaO_Numero_Estabelecimento_Creche2023.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/02_educacao/1-educacao_basica/EDUCAcaO_Numero_Estabelecimento_Creche2023.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -234,10 +200,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/02_educacao/1-educacao_basica/EDUCACAO_NUmero_Estabelecimentos_PrE-Escola2023.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/02_educacao/1-educacao_basica/EDUCACAO_NUmero_Estabelecimentos_PrE-Escola2023.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -252,10 +218,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/02_educacao/1-educacao_basica/EDUCACAO_Numero_Estabelecimentos_Fundamental2023.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/02_educacao/1-educacao_basica/EDUCACAO_Numero_Estabelecimentos_Fundamental2023.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -270,10 +236,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/02_educacao/1-educacao_basica/EDUCAcaO_Numero_Estabelecimentos_Medio2023.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/02_educacao/1-educacao_basica/EDUCAcaO_Numero_Estabelecimentos_Medio2023.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -291,10 +257,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/02_educacao/2-educacao_superior/Educacao_Num_Total_de_Inst_Nivel_Superior_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/02_educacao/2-educacao_superior/Educacao_Num_Total_de_Inst_Nivel_Superior_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -309,10 +275,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/02_educacao/2-educacao_superior/Educacao_Num_Total_de_Matriculas_Nivel_Superior_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/02_educacao/2-educacao_superior/Educacao_Num_Total_de_Matriculas_Nivel_Superior_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -327,10 +293,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/02_educacao/2-educacao_superior/Educacao_Num_Total_de_ConcLuintes_Nivel_Superior_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/02_educacao/2-educacao_superior/Educacao_Num_Total_de_ConcLuintes_Nivel_Superior_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -348,10 +314,10 @@
                                 <div class=" d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/03_saude/Saude_Tx_de_Mortalidade_Geral_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/03_saude/Saude_Tx_de_Mortalidade_Geral_2024.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -366,10 +332,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/03_saude/Saude_Tx_de_Mortalidade_Infantil_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/03_saude/Saude_Tx_de_Mortalidade_Infantil_2024.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -383,10 +349,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/03_saude/Saude_Tx_de_Mortalidade_Materna_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/03_saude/Saude_Tx_de_Mortalidade_Materna_2024.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -400,10 +366,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/03_saude/Saude_Leitos_Hospitalares_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/03_saude/Saude_Leitos_Hospitalares_2024.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -418,10 +384,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/03_saude/Saude_PNV_Parto_Normal_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/03_saude/Saude_PNV_Parto_Normal_2024.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -435,10 +401,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/03_saude/Saude_PNV_Parto_Cesario_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/03_saude/Saude_PNV_Parto_Cesario_2024.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -454,15 +420,15 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/03_saude/Saude_PNV_7_Cons_Pre_Natal_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/03_saude/Saude_PNV_7_Cons_Pre_Natal_2024.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-4 col-md-6 portfolio-item saude ">
                         <div class="portfolio-inner rounded">
                             <img class="img-fluid" src="icons/03_saude/Saude_Tx_Cob_Pop_ACS_2024.png" alt="">
@@ -471,10 +437,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/03_saude/Saude_Tx_Cob_Pop_ACS_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/03_saude/Saude_Tx_Cob_Pop_ACS_2024.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -489,10 +455,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/03_saude/Saude_Tx_Cob_Pop_ESF_2024.png" data-lightbox="portfolio"><i
-                                            class="fa fa-eye"></i></a>
+                                            class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/03_saude/Saude_Tx_Cob_Pop_ESF_2024.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -506,10 +472,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/03_saude/Saude_Tx_Cobertura_Populacional_EAB_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/03_saude/Saude_Tx_Cobertura_Populacional_EAB_2024.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -528,10 +494,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/04_inclusao_social/Inclusao_Social_FBP_Bolsa_Familia_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/04_inclusao_social/Inclusao_Social_FBP_Bolsa_Familia_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -546,10 +512,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/04_inclusao_social/Inclusao_Social_VTRP_Bolsa_Familia_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/04_inclusao_social/Inclusao_Social_VTRP_Bolsa_Familia_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -566,28 +532,14 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/04_inclusao_social/Inclusao_Social_FBP_Aux_Brasil_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/04_inclusao_social/Inclusao_Social_FBP_Aux_Brasil_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- <div class="col-lg-4 col-md-6 portfolio-item inclusaosocial ">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-6.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4 text-center"> Famílias Beneficiárias do Auxílio Brasil </h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-6.jpg"
-                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-download"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
 
                     <div class="col-lg-4 col-md-6 portfolio-item inclusaosocial ">
                         <div class="portfolio-inner rounded">
@@ -598,10 +550,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/04_inclusao_social/Inclusao_Social_VTRP_Aux_Brasil_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/04_inclusao_social/Inclusao_Social_VTRP_Aux_Brasil_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -624,10 +576,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/05_previdencia_social/Previdencia_Social_Beneficios_Emitidos_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/05_previdencia_social/Previdencia_Social_Beneficios_Emitidos_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -644,10 +596,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/05_previdencia_social/Previdencia_Social_Valor_Aplicado_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/05_previdencia_social/Previdencia_Social_Valor_Aplicado_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -667,10 +619,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/06_segurança/SEGURANcA_Taxa_HomicidiosTotal2023.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/06_segurança/SEGURANcA_Taxa_HomicidiosTotal2023.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -686,10 +638,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/06_segurança/SEGURANcA_Taxa_Homicidios_Jovens2023.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/06_segurança/SEGURANcA_Taxa_Homicidios_Jovens2023.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -704,10 +656,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/06_segurança/SEGURANÇA_Taxa_Mortes_Transito2023.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/06_segurança/SEGURANÇA_Taxa_Mortes_Transito2023.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -729,10 +681,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/07_habitacao_e_saneamento/Habitacao_Saneamento_Rede_Geral_de_Agua_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/07_habitacao_e_saneamento/Habitacao_Saneamento_Rede_Geral_de_Agua_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -748,10 +700,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/07_habitacao_e_saneamento/Habitacao_Saneamento_Rede_Geral_de_Esgoto_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/07_habitacao_e_saneamento/Habitacao_Saneamento_Rede_Geral_de_Esgoto_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -767,10 +719,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/07_habitacao_e_saneamento/Habitacao_Saneamento_Coleta_de_Lixo_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/07_habitacao_e_saneamento/Habitacao_Saneamento_Coleta_de_Lixo_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -786,10 +738,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/07_habitacao_e_saneamento/Habitacao_Saneamento_Domicilios_Mat_Duraveis_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/07_habitacao_e_saneamento/Habitacao_Saneamento_Domicilios_Mat_Duraveis_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -810,10 +762,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/08_mercado_de_trabalho/Mercado_Trabalho_Num_Vin_Empregaticios_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/08_mercado_de_trabalho/Mercado_Trabalho_Num_Vin_Empregaticios_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -828,10 +780,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/08_mercado_de_trabalho/Mercado_Trababalho_Rem_Media_Trab_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/08_mercado_de_trabalho/Mercado_Trababalho_Rem_Media_Trab_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -846,10 +798,10 @@
                                 <div class=" d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/08_mercado_de_trabalho/Mercado_Trabalho_Num_Estab_Total_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/08_mercado_de_trabalho/Mercado_Trabalho_Num_Estab_Total_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -864,10 +816,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/08_mercado_de_trabalho/Mercado_Trababalho_Tx_de_Ocupacao_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/08_mercado_de_trabalho/Mercado_Trababalho_Tx_de_Ocupacao_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -882,10 +834,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/08_mercado_de_trabalho/Mercado_Trababalho_Tx_de_Desocupacao_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/08_mercado_de_trabalho/Mercado_Trababalho_Tx_de_Desocupacao_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -904,9 +856,9 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_Soja2023.png" data-lightbox="portfolio"><i
-                                            class="fa fa-eye"></i></a>
+                                            class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
-                                        href="mapas/09_economia/ECONOMIA_Soja2023.png"><i class="fa fa-download"
+                                        href="mapas/09_economia/ECONOMIA_Soja2023.png"><i class="bi bi-download"
                                             download></i></a>
                                 </div>
                             </div>
@@ -921,9 +873,9 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_Milho2023.png" data-lightbox="portfolio"><i
-                                            class="fa fa-eye"></i></a>
+                                            class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
-                                        href="mapas/09_economia/ECONOMIA_Milho2023.png"><i class="fa fa-download"
+                                        href="mapas/09_economia/ECONOMIA_Milho2023.png"><i class="bi bi-download"
                                             download></i></a>
                                 </div>
                             </div>
@@ -938,10 +890,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_Rebanho_Bovino2023.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_Rebanho_Bovino2023.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -955,10 +907,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_Producao_Leite2023.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_Producao_Leite2023.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -973,10 +925,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_Valor_ProduA7A3o_Leite2023.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_Valor_ProduA7A3o_Leite2023.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -992,10 +944,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_Indutria_Empresas2022.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_Indutria_Empresas2022.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1011,10 +963,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_Indutria_Pessoal_Ocupado2022.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_Indutria_Pessoal_Ocupado2022.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1028,10 +980,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_Servicos_Empresas2022.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_Servicos_Empresas2022.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1047,10 +999,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_Servicos_Pessoal_Ocupado2022.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_Servicos_Pessoal_Ocupado2022.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1066,10 +1018,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_ConstrucaoCivil_Empresas2022.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_ConstrucaoCivil_Empresas2022.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1085,10 +1037,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_ConstrucaoCivil_Pessoal_Ocupado2022.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_ConstrucaoCivil_Pessoal_Ocupado2022.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1103,10 +1055,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_Comércio_Unidades_Locais2022.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_Comércio_Unidades_Locais2022.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1121,10 +1073,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_Comercio_Pessoal_Ocupado2022.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_Comercio_Pessoal_Ocupado2022.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1138,10 +1090,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_Comércio_Varejista2022.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_Comércio_Varejista2022.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1156,10 +1108,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_Comercio_Varejista_Pessoal_Ocupado2022.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/09_economia/ECONOMIA_Comercio_Varejista_Pessoal_Ocupado2022.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1177,10 +1129,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/10_pib/PIB_Produto_Interno_Bruto2022.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/10_pib/PIB_Produto_Interno_Bruto2022.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1194,10 +1146,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/10_pib/PIB_Valor_Adicionado_Total2022.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/10_pib/PIB_Valor_Adicionado_Total2022.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1212,10 +1164,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/10_pib/PIB_VA_Agropecuária2022.png" data-lightbox="portfolio"><i
-                                            class="fa fa-eye"></i></a>
+                                            class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/10_pib/PIB_VA_Agropecuária2022.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1230,10 +1182,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/10_pib/PIB_VA_IndUstria2022.png" data-lightbox="portfolio"><i
-                                            class="fa fa-eye"></i></a>
+                                            class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/10_pib/PIB_VA_IndUstria2022.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1247,10 +1199,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/10_pib/PIB_VA_Administracao_Publica2022.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/10_pib/PIB_VA_Administracao_Publica2022.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1265,10 +1217,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/10_pib/PIB_VA_Serviços2022.png" data-lightbox="portfolio"><i
-                                            class="fa fa-eye"></i></a>
+                                            class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/10_pib/PIB_VA_Serviços2022.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1283,10 +1235,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/10_pib/PIB_Impostos2021.png" data-lightbox="portfolio"><i
-                                            class="fa fa-eye"></i></a>
+                                            class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/10_pib/PIB_Impostos2021.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1300,10 +1252,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/10_pib/PIB_PERCAPITA2022.png" data-lightbox="portfolio"><i
-                                            class="fa fa-eye"></i></a>
+                                            class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/10_pib/PIB_PERCAPITA2022.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1323,10 +1275,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/11_financas_publicas/FINANcASPuBLICAS_Receita_Orcamentaria2023.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/11_financas_publicas/FINANcASPuBLICAS_Receita_Orcamentaria2023.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1341,10 +1293,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/11_financas_publicas/FINANcASPuBLICAS_Receita_Corrente2023.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/11_financas_publicas/FINANcASPuBLICAS_Receita_Corrente2023.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1360,10 +1312,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/11_financas_publicas/FINANcASPuBLICAS_Receita_Transferencia_Corrente2023.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/11_financas_publicas/FINANcASPuBLICAS_Receita_Transferencia_Corrente2023.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1378,10 +1330,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/11_financas_publicas/FINANÇASPuBLICAS_Despesa_Total2023.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/11_financas_publicas/FINANÇASPuBLICAS_Despesa_Total2023.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1396,10 +1348,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/11_financas_publicas/FINANcASPuBLICAS_Despesa_Investimento2023.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/11_financas_publicas/FINANcASPuBLICAS_Despesa_Investimento2023.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1414,10 +1366,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/11_financas_publicas/FINANcASPuBLICAS_Despesa_Pessoal2023.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/11_financas_publicas/FINANcASPuBLICAS_Despesa_Pessoal2023.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1436,10 +1388,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/12_balanca_comercial/BALANÇACOMERCIAL_Exportacao2023.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/12_balanca_comercial/BALANÇACOMERCIAL_Exportacao2023.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1454,10 +1406,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/12_balanca_comercial/BALANÇACOMERCIAL_Importacao2023.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/12_balanca_comercial/BALANÇACOMERCIAL_Importacao2023.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1472,10 +1424,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/12_balanca_comercial/BALANÇACOMERCIAL_Saldo2023.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/12_balanca_comercial/BALANÇACOMERCIAL_Saldo2023.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1494,10 +1446,10 @@
                                 <div class=" d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/13_meio_ambiente/Meio_Ambiente_Area_de_Floresta_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/13_meio_ambiente/Meio_Ambiente_Area_de_Floresta_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1512,10 +1464,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/13_meio_ambiente/Meio_Ambiente_Desflorestamento_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/13_meio_ambiente/Meio_Ambiente_Desflorestamento_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1530,10 +1482,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/13_meio_ambiente/Meio_Ambiente_Focos_de_Calor_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/13_meio_ambiente/Meio_Ambiente_Focos_de_Calor_2024.png" download><i
-                                            class="fa fa-download"></i></a>
+                                            class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1552,15 +1504,15 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/14_ciencia_e_tecnologia/Ciencia_Tecnologia_Investimento_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/14_ciencia_e_tecnologia/Ciencia_Tecnologia_Investimento_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
- 
+
                     <div class="col-lg-4 col-md-6 portfolio-item cienciaetecnologia ">
                         <div class="portfolio-inner rounded">
                             <img class="img-fluid"
@@ -1570,10 +1522,10 @@
                                 <div class=" d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/14_ciencia_e_tecnologia/Ciencia_Tecnologia_Bolsa_de_Doutorado_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/14_ciencia_e_tecnologia/Ciencia_Tecnologia_Bolsa_de_Doutorado_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1589,16 +1541,14 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/14_ciencia_e_tecnologia/Ciencia_Tecnologia_Bolsa_de_Mestrado_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/14_ciencia_e_tecnologia/Ciencia_Tecnologia_Bolsa_de_Mestrado_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
- 
 
                     <!--############# Ciencia e Tecnologia FIM ############# -->
 
@@ -1614,10 +1564,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/15_infraestrutura/Infraestrutura_Frota_de_Veiculos_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/15_infraestrutura/Infraestrutura_Frota_de_Veiculos_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1633,10 +1583,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/15_infraestrutura/Infraestrutura_Consumidores_Residenciais_de_Energia_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/15_infraestrutura/Infraestrutura_Consumidores_Residenciais_de_Energia_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1652,10 +1602,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/15_infraestrutura/Infraestrutura_Consumo_Residencial_de_Energia_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/15_infraestrutura/Infraestrutura_Consumo_Residencial_de_Energia_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1670,10 +1620,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/15_infraestrutura/Infraestrutura_Geração_de_Energia_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/15_infraestrutura/Infraestrutura_Geração_de_Energia_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1689,10 +1639,10 @@
                                 <div class="d-flex">
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/15_infraestrutura/Infraestrutura_Domicilios_Utilizacao_Internet_2024.png"
-                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        data-lightbox="portfolio"><i class="bi bi-eye"></i></a>
                                     <a class="btn btn-lg-square rounded-circle mx-2"
                                         href="mapas/15_infraestrutura/Infraestrutura_Domicilios_Utilizacao_Internet_2024.png"
-                                        download><i class="fa fa-download"></i></a>
+                                        download><i class="bi bi-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1796,19 +1746,10 @@
 
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/parallax/parallax.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Template Javascript -->
+<!-- PCN FOOTER START --><footer class="footer-main" id="contato"><div class="container py-5"><div class="row g-5"><div class="col-lg-3 col-md-6"><h5 class="footer-title mb-4">Sobre FAPESPA</h5><p class="small text-light">Fundação Amazônia de Amparo a Estudos e Pesquisas, promovendo ciência, tecnologia e inovação para o desenvolvimento do estado.</p><div class="social-icons mt-4"><a href="https://www.instagram.com/fapespa/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="https://www.facebook.com/FapespaPA" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="https://x.com/fapespa" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter"><i class="bi bi-twitter"></i></a></div></div><div class="col-lg-3 col-md-6"><h5 class="footer-title mb-4">Contato</h5><ul class="list-unstyled small text-light"><li class="mb-3"><i class="bi bi-geo-alt me-2"></i>Av. Presidente Vargas, 670</li><li class="mb-3"><i class="bi bi-telephone me-2"></i>+55 (91) 3323-2550</li><li class="mb-3"><i class="bi bi-clock me-2"></i>Seg–Sex: 8h às 14h</li><li><i class="bi bi-envelope me-2"></i><a href="mailto:contato@fapespa.pa.gov.br">contato@fapespa.pa.gov.br</a></li></ul></div><div class="col-lg-3 col-md-6"><h5 class="footer-title mb-4">Produtos</h5><ul class="list-unstyled small"><li class="mb-2"><a href="https://www.fapespa.pa.gov.br/anuario-estatistico-do-para-2/" target="_blank" rel="noopener noreferrer">Anuário Estatístico</a></li><li class="mb-2"><a href="https://www.fapespa.pa.gov.br/radar-de-indicadores-das-ri/" target="_blank" rel="noopener noreferrer">Radar de Indicadores</a></li><li class="mb-2"><a href="https://www.fapespa.pa.gov.br/para-no-contexto-nacional-2/" target="_blank" rel="noopener noreferrer">Pará no Contexto Nacional</a></li><li class="mb-2"><a href="https://www.fapespa.pa.gov.br/estatistica-municipal/" target="_blank" rel="noopener noreferrer">Estatística Municipal</a></li><li><a href="https://www.fapespa.pa.gov.br/para-em-numeros/" target="_blank" rel="noopener noreferrer">Pará em Números</a></li></ul></div><div class="col-lg-3 col-md-6"><h5 class="footer-title mb-4">Localização</h5><div class="map-embed rounded"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.61483842183!2d-48.4907923!3d-1.4589201" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização FAPESPA"></iframe></div></div></div></div></footer><div class="footer-copyright text-center py-4"><div class="container"><small class="text-muted">© Pará no Contexto Nacional 2024. Todos os direitos reservados. <a href="https://www.fapespa.pa.gov.br/" class="text-muted text-decoration-none">FAPESPA</a></small></div></div><button id="btnTop" type="button" title="Voltar ao topo" aria-label="Voltar ao topo"><i class="bi bi-arrow-up"></i></button><!-- PCN FOOTER END -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
 </html>
+

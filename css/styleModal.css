@@ -274,3 +274,12 @@ h1, h2, h3, h4, h5, .navbar-brand, .accordion-button {
     grid-template-columns: 1fr;
   }
 }
+
+/* Modal editorial: estado, rolagem e foco */
+body.modal-open { overflow: hidden; }
+.modal-backdrop-custom[hidden], .custom-modal[hidden] { display: none !important; }
+.custom-modal { overflow-y: auto; }
+.custom-modal-body { overflow: auto; overscroll-behavior: contain; }
+.custom-modal-body iframe { display:block; width:100%; height:min(72vh, 760px); min-height:420px; border:0; background:#fff; }
+.custom-modal-close:focus-visible, #modal-open-full:focus-visible, .custom-modal-footer button:focus-visible { outline:3px solid #2f7f2f; outline-offset:2px; }
+@media (max-width: 576px) { .custom-modal-body iframe { min-height:65vh; height:65vh; } }

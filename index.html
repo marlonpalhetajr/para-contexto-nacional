@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -22,385 +22,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <style>
-    :root {
-      --primary: #2f7f2f;
-      --secondary: #163b6b;
-      --background-color: #f7f9fb;
-      --text-color: #222;
-      --card-background: #ffffff;
-      --footer-background: #1a3c6e;
-      --footer-text: #ffffff;
-      --border-color: #ddd;
-      --shadow-color: rgba(0,0,0,0.04);
-    }
-
-    html { scroll-behavior: smooth; font-size: 16px; }
-    body {
-      font-family: 'Open Sans', Arial, sans-serif;
-      font-size: 17px;
-      background: linear-gradient(to left, rgba(47, 127, 47, 0.25) 0%, rgba(47, 127, 47, 0.12) 25%, transparent 50%);
-      background-attachment: fixed;
-      color: var(--text-color);
-      min-height: 100vh;
-    }
-    h1, h2, h3, h4, h5, .navbar-brand { font-family: 'Jost', sans-serif; }
-
-    .navbar {
-      background: var(--card-background);
-      box-shadow: 0 2px 10px var(--shadow-color);
-      padding: 0.8rem 1rem;
-    }
-    .navbar .navbar-nav .nav-link {
-      margin-right: 35px;
-      color: var(--secondary);
-      font-size: 18px;
-      font-weight: 500;
-      outline: none;
-    }
-    .navbar .navbar-nav .nav-link:hover,
-    .navbar .navbar-nav .nav-link.active { color: var(--primary); }
-    @media (max-width: 991.98px) {
-      .navbar .navbar-nav .nav-link { margin-right: 0; padding: 10px 0; }
-      .navbar .navbar-nav { border-top: 1px solid #eeeeee; }
-    }
-
-    #spinner {
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
-      z-index: 99999;
-    }
-    #spinner.show {
-      transition: opacity 0.5s ease-out, visibility 0s linear 0s;
-      visibility: visible;
-      opacity: 1;
-    }
-
-    .hero-section-modern {
-      position: relative;
-      min-height: calc(100vh - 84px);
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(120deg, rgba(22,59,107,0.16) 0%, rgba(47,127,47,0.08) 100%);
-    }
-    .hero-background {
-      position: absolute;
-      inset: 0;
-    }
-    .hero-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-    .hero-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(8, 30, 18, 0.18) 0%, rgba(8, 30, 18, 0.34) 100%);
-    }
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      width: 100%;
-      min-height: calc(100vh - 84px);
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      padding-bottom: 12vh;
-    }
-    .hero-text-wrapper {
-      text-align: center;
-    }
-    .hero-title {
-      font-size: 2.8rem;
-      font-weight: 700;
-      color: #fff;
-      text-shadow: 0 10px 30px rgba(0,0,0,0.15);
-      margin-bottom: 0;
-    }
-    @media (max-width: 768px) {
-      .hero-content { padding-bottom: 8vh; }
-      .hero-title { font-size: 2rem; }
-    }
-
-    .btn-hero {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      border-radius: 999px;
-      padding: 0.95rem 1.4rem;
-      font-weight: 700;
-      text-decoration: none;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .btn-hero:hover { transform: translateY(-2px); }
-    .btn-hero-primary {
-      color: #0a2f27;
-      background: linear-gradient(135deg, #f8f4ea, #f2b544);
-      box-shadow: 0 12px 30px rgba(242, 181, 68, 0.28);
-    }
-
-    .card-modern {
-      background: rgba(255,255,255,0.9);
-      border: 1px solid rgba(22,59,107,0.08);
-      box-shadow: 0 16px 36px rgba(15, 44, 34, 0.08);
-      border-radius: 1.5rem;
-      padding: 1.5rem;
-      height: 100%;
-      transition: transform 0.22s ease, box-shadow 0.22s ease;
-    }
-    .card-hover-lift:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(15, 44, 34, 0.12); }
-    .card-icon-wrapper {
-      width: 3.35rem;
-      height: 3.35rem;
-      display: grid;
-      place-items: center;
-      border-radius: 1rem;
-      color: #fff;
-      margin-bottom: 1rem;
-      font-size: 1.2rem;
-    }
-    .bg-primary-gradient { background: linear-gradient(135deg, var(--primary), #17a06e); }
-    .bg-success-gradient { background: linear-gradient(135deg, #0f6f5a, #2f7f2f); }
-    .bg-info-gradient { background: linear-gradient(135deg, #1a3c6e, #3d74b8); }
-    .btn-card-modern {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.35rem;
-      padding: 0.65rem 1rem;
-      border-radius: 999px;
-      color: var(--secondary);
-      font-weight: 700;
-      text-decoration: none;
-      background: rgba(22,59,107,0.05);
-    }
-    .btn-card-modern:hover { color: var(--primary); }
-
-    .service-item {
-      position: relative;
-      text-align: center;
-      background: #fff;
-      border-radius: 1.25rem;
-      overflow: hidden;
-      box-shadow: 0 16px 36px rgba(15, 44, 34, 0.08);
-      height: 100%;
-    }
-    .service-item .service-img { overflow: hidden; }
-    .service-item .service-img img { width: 100%; height: 180px; object-fit: cover; display: block; }
-    .service-item .service-text { position: relative; z-index: 1; background: #fff; }
-
-    .maps-section-card {
-      background: rgba(255,255,255,0.92);
-      border-radius: 1.5rem;
-      box-shadow: 0 16px 36px rgba(15, 44, 34, 0.08);
-      overflow: hidden;
-    }
-    .maps-section-card img { width: 100%; height: 100%; object-fit: cover; }
-
-    .tema-card {
-      min-height: 245px;
-      color: #fff;
-      border-radius: 1.2rem;
-      border: 0;
-      box-shadow: 0 16px 36px rgba(15, 44, 34, 0.10);
-    }
-    .tema-card-bg-img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: 0;
-      filter: saturate(0.95) contrast(0.95);
-    }
-    .tema-card::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(10, 28, 18, 0.56) 0%, rgba(10, 28, 18, 0.70) 100%);
-      z-index: 1;
-    }
-    .tema-card .card-body {
-      position: relative;
-      z-index: 2;
-      padding: 1.35rem 1rem;
-    }
-    .tema-icon {
-      width: 4rem;
-      height: 4rem;
-      border-radius: 999px;
-      display: grid;
-      place-items: center;
-      background: rgba(255,255,255,0.16);
-      border: 1px solid rgba(255,255,255,0.18);
-      font-size: 1.4rem;
-    }
-    .btn-tema-card {
-      border: 1px solid #fff !important;
-      box-shadow: inset 0 0 0 1px #fff !important;
-      -webkit-box-shadow: inset 0 0 0 1px #fff !important;
-      color: #fff !important;
-      background: transparent !important;
-      border-radius: 999px;
-      padding-inline: 1rem;
-      font-weight: 600;
-    }
-    .tema-card .small { color: rgba(255,255,255,0.92) !important; }
-    .tema-card h5 { color: #fff !important; }
-    .tema-card:hover { transform: translateY(-4px) scale(1.01); }
-
-    .section-title { color: var(--secondary); font-weight: 700; margin-bottom: 2rem; }
-    #principais-temas .section-title, #sobre .section-title { color: rgb(0,66,0) !important; }
-    .card-feature {
-      position: relative;
-      overflow: hidden;
-      background-size: cover;
-      background-position: center;
-      transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
-      border-radius: 20px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    }
-    .card-feature.card-animated { min-height: 220px; padding: 18px 16px; border-radius: 14px; }
-    @media (min-width: 1000px) { .card-feature.card-animated { min-height: 260px; } }
-    .card-feature::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.96) 60%, rgba(255,255,255,0.94) 100%);
-      z-index: 1;
-    }
-    .card-feature > * { position: relative; z-index: 2; }
-    .card-feature:hover { transform: translateY(-4px) scale(1.01); box-shadow: 0 10px 20px rgba(12,34,61,0.10); }
-    .card-feature:hover h5, .card-feature:hover p, .card-feature:hover i { color: #fff !important; }
-
-    .product-card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      gap: 0.7rem;
-      min-height: 220px;
-      padding: 1.5rem;
-      border-radius: 1.4rem;
-      background: rgba(255,255,255,0.92);
-      color: inherit;
-      text-decoration: none;
-      box-shadow: 0 16px 36px rgba(15, 44, 34, 0.08);
-      transition: transform 0.22s ease, box-shadow 0.22s ease;
-    }
-    .product-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(15, 44, 34, 0.12); color: inherit; }
-    .product-card i { font-size: 2rem; color: var(--primary); }
-    .product-card h5 { margin-bottom: 0; font-weight: 700; color: var(--secondary); }
-    .product-card p { margin-bottom: 0; color: #5f6b72; }
-
-    .footer-main {
-      background: linear-gradient(135deg, #163b6b 0%, #1a3c6e 100%);
-      color: var(--footer-text);
-    }
-    .footer-title { color: #fff; font-weight: 700; }
-    .social-icons { display: flex; gap: 0.6rem; }
-    .social-link {
-      width: 2.6rem;
-      height: 2.6rem;
-      border-radius: 999px;
-      display: grid;
-      place-items: center;
-      color: #fff;
-      background: rgba(255,255,255,0.12);
-      text-decoration: none;
-    }
-    .social-link:hover { background: rgba(255,255,255,0.2); color: #fff; }
-    .map-embed iframe { width: 100%; height: 220px; border: 0; }
-    .footer-copyright { background: rgba(255,255,255,0.06); }
-    .footer-copyright a { color: #fff; }
-    .footer-copyright .text-muted { color: rgba(255,255,255,0.75) !important; }
-
-    .about-text { text-align: justify; }
-    .section-break { scroll-margin-top: 100px; }
-
-    #btnTop {
-      position: fixed;
-      right: 30px;
-      bottom: 30px;
-      width: 52px;
-      height: 52px;
-      border: 0;
-      border-radius: 999px;
-      background: var(--primary);
-      color: #fff;
-      box-shadow: 0 12px 28px rgba(0,0,0,0.18);
-      display: none;
-      z-index: 999;
-    }
-
-    .acess-dropdown {
-      position: absolute;
-      right: 0;
-      top: calc(100% + 0.75rem);
-      width: min(420px, 90vw);
-      background: #fff;
-      border-radius: 1rem;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.18);
-      padding: 1rem;
-      z-index: 1050;
-      color: var(--text-color);
-    }
-    .acess-section-title { font-weight: 700; color: var(--secondary); margin-top: 0.35rem; margin-bottom: 0.5rem; }
-    .acess-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-    .acess-control {
-      border: 1px solid rgba(22,59,107,0.16);
-      background: #f8fbff;
-      color: #173127;
-      border-radius: 999px;
-      padding: 0.5rem 0.8rem;
-      font-size: 0.92rem;
-    }
-    .acess-reset { background: var(--primary); color: #fff; border-color: var(--primary); }
-
-    .modal-backdrop-custom {
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.55);
-      display: none;
-      z-index: 2000;
-    }
-    .custom-modal {
-      position: fixed;
-      inset: 5vh 5vw;
-      background: #fff;
-      border-radius: 1rem;
-      box-shadow: 0 24px 60px rgba(0,0,0,0.2);
-      display: none;
-      z-index: 2001;
-      overflow: hidden;
-    }
-    .custom-modal-content { display: flex; flex-direction: column; height: 100%; }
-    .custom-modal-header, .custom-modal-footer { padding: 1rem 1.25rem; border-bottom: 1px solid #eee; }
-    .custom-modal-footer { border-bottom: 0; border-top: 1px solid #eee; display: flex; justify-content: flex-end; gap: 0.75rem; }
-    .custom-modal-body { flex: 1; overflow: auto; }
-    .custom-modal-close { border: 0; background: transparent; font-size: 2rem; line-height: 1; }
-    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
-
-    @media (max-width: 991.98px) {
-      .navbar .navbar-nav .nav-link { padding: 10px 0; }
-      .custom-modal { inset: 4vh 3vw; }
-    }
-  </style>
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/styleModal.css" rel="stylesheet">
+    <link href="css/anuario-template.css" rel="stylesheet">
+<link href="css/styleModal.css" rel="stylesheet">
+  <link href="css/pcn-content.css" rel="stylesheet"><link href="css/responsive.css" rel="stylesheet">
 </head>
 
 <body>
   <div id="acess-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
 
-  <div id="modalBackdrop" class="modal-backdrop-custom" onclick="closeCustomModal();"></div>
-  <div id="contentModal" class="custom-modal" role="dialog" aria-modal="true" aria-labelledby="contentModalLabel">
+  <div id="modalBackdrop" class="modal-backdrop-custom" hidden onclick="closeCustomModal();"></div>
+  <div id="contentModal" class="custom-modal" hidden role="dialog" aria-modal="true" aria-labelledby="contentModalLabel">
     <div class="custom-modal-content">
       <div class="custom-modal-header d-flex align-items-center justify-content-between">
         <h5 id="contentModalLabel" class="mb-0">Conteúdo</h5>
@@ -483,34 +114,7 @@
   </nav>
 
   <main id="inicio">
-    <section class="hero-section-modern js-reveal is-visible" id="pcn">
-      <div class="hero-background">
-        <img src="img/pcn2024.png" alt="Capa do Pará no Contexto Nacional da FAPESPA" class="hero-image" width="1100" height="700" decoding="async" fetchpriority="high">
-        <div class="hero-overlay"></div>
-      </div>
-      <div class="hero-content">
-        <div class="hero-text-wrapper">
-          <div class="mb-3">
-            <span class="badge rounded-pill px-3 py-2 bg-light text-dark fw-semibold shadow-sm">PCN 2024</span>
-          </div>
-          <h1 class="hero-title mb-3">Pará no Contexto Nacional</h1>
-          <p class="text-white-50 mx-auto mb-4" style="max-width: 760px; font-size: 1.05rem; text-shadow: 0 10px 24px rgba(0,0,0,0.18);">
-            Uma leitura institucional dos principais indicadores sociais, econômicos, territoriais e ambientais do Pará, organizada em um layout mais próximo do Anuário Estatístico.
-          </p>
-          <div class="hero-cta-group d-flex flex-wrap justify-content-center gap-3">
-            <a href="#" data-content-url="apresentacao.html" data-modal-title="Apresentação" class="btn-hero btn-hero-primary" aria-label="Abrir apresentação em modal" onclick="openCustomModal(event);">
-              <i class="bi bi-play-circle me-2"></i>Apresentação
-            </a>
-            <a href="sumario.html" target="_blank" class="btn-hero" style="background:#fff;color:#163b6b;box-shadow:0 12px 30px rgba(0,0,0,0.18);">
-              <i class="bi bi-journal-text me-2"></i>Sumário
-            </a>
-            <a href="glossario.html" target="_blank" class="btn-hero" style="background:rgba(255,255,255,0.14);color:#fff;border:1px solid rgba(255,255,255,0.35);box-shadow:none;">
-              <i class="bi bi-book me-2"></i>Glossário
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section class="hero-section-modern js-reveal is-visible" id="pcn"><div class="hero-background"><img src="img/pcn2024.png" alt="Capa do Pará no Contexto Nacional 2024" class="hero-image" width="1100" height="700" decoding="async" fetchpriority="high"><div class="hero-overlay"></div></div><div class="hero-content"><div class="hero-text-wrapper"><h1 class="hero-title animate-fade-in">Pará no Contexto Nacional</h1><div class="hero-cta-group hero-cta-single animate-fade-in-delay-2"><a href="#" data-content-url="apresentacao.html" data-modal-title="Apresentação" class="btn-hero btn-hero-primary" aria-label="Abrir apresentação em modal" onclick="openCustomModal(event);"><i class="bi bi-play-circle me-2"></i>Apresentação</a></div></div></div></section>
 
      <!-- CARDS DE ACESSO RÁPIDO (Sumário, Glossário, Expediente) -->
   <section class="quick-access-section js-reveal section-break" aria-label="Acesso rapido">
@@ -522,8 +126,8 @@
               <i class="bi bi-journal-text"></i>
             </div>
             <h5 class="card-modern-title" data-i18n="btn_sumario">Sumário</h5>
-            <p class="card-modern-text" data-i18n="btn_sumario_text">Veja o sumário do Anuário Estatístico do Pará.</p>
-            <a href="sumario1.html" target="_blank" class="btn-card-modern" aria-label="Acessar sumário">
+            <p class="card-modern-text" data-i18n="btn_sumario_text">Veja o sumário do Pará no Contexto Nacional 2024.</p>
+            <a href="sumario.html" target="_blank" class="btn-card-modern" aria-label="Acessar sumário">
               Acessar <i class="bi bi-arrow-right ms-2"></i>
             </a>
           </div>
@@ -548,7 +152,7 @@
               <i class="bi bi-file-earmark-text"></i>
             </div>
             <h5 class="card-modern-title" data-i18n="btn_expediente">Expediente</h5>
-            <p class="card-modern-text" data-i18n="btn_expediente_text">Informações sobre a equipe e produção do anuário.</p>
+            <p class="card-modern-text" data-i18n="btn_expediente_text">Informações sobre a equipe e produção do PCN 2024.</p>
             <a href="expediente.html" target="_blank" class="btn-card-modern" aria-label="Acessar expediente">
               Acessar <i class="bi bi-arrow-right ms-2"></i>
             </a>
@@ -561,7 +165,7 @@
     <section class="container py-5 js-reveal section-break" id="principais-temas">
       <h2 data-i18n="main_title" class="section-title text-center">Principais Temas</h2>
       <div class="row g-4 justify-content-center reveal-stagger">
-        <div class="col-md-6 col-xl-3">
+        <div class="col-md-6">
           <div class="card card-feature card-animated text-center p-4 h-100 tema-card tema-demografia position-relative overflow-hidden" role="group">
             <img src="img/indicadores/demografia.png" alt="Fundo Demografia" class="tema-card-bg-img" loading="lazy" decoding="async">
             <div class="card-body d-flex flex-column align-items-center justify-content-center h-100 text-center gap-3">
@@ -572,7 +176,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">
+        <div class="col-md-6">
           <div class="card card-feature card-animated text-center p-4 h-100 tema-card tema-educacao position-relative overflow-hidden" role="group">
             <img src="img/indicadores/educacao.jpg" alt="Fundo Educação" class="tema-card-bg-img" loading="lazy" decoding="async">
             <div class="card-body d-flex flex-column align-items-center justify-content-center h-100 text-center gap-3">
@@ -583,7 +187,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">
+        <div class="col-md-6">
           <div class="card card-feature card-animated text-center p-4 h-100 tema-card tema-saude position-relative overflow-hidden" role="group">
             <img src="img/indicadores/saude.png" alt="Fundo Saúde" class="tema-card-bg-img" loading="lazy" decoding="async">
             <div class="card-body d-flex flex-column align-items-center justify-content-center h-100 text-center gap-3">
@@ -594,7 +198,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">
+        <div class="col-md-6">
           <div class="card card-feature card-animated text-center p-4 h-100 tema-card tema-inclusao-social position-relative overflow-hidden" role="group">
             <img src="img/indicadores/inclusaosocial.png" alt="Fundo Inclusão Social" class="tema-card-bg-img" loading="lazy" decoding="async">
             <div class="card-body d-flex flex-column align-items-center justify-content-center h-100 text-center gap-3">
@@ -605,7 +209,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">
+        <div class="col-md-6">
           <div class="card card-feature card-animated text-center p-4 h-100 tema-card tema-previdencia position-relative overflow-hidden" role="group">
             <img src="img/indicadores/previdenciasocial.png" alt="Fundo Previdência Social" class="tema-card-bg-img" loading="lazy" decoding="async">
             <div class="card-body d-flex flex-column align-items-center justify-content-center h-100 text-center gap-3">
@@ -616,7 +220,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">
+        <div class="col-md-6">
           <div class="card card-feature card-animated text-center p-4 h-100 tema-card tema-seguranca position-relative overflow-hidden" role="group">
             <img src="img/indicadores/seguranca.png" alt="Fundo Segurança" class="tema-card-bg-img" loading="lazy" decoding="async">
             <div class="card-body d-flex flex-column align-items-center justify-content-center h-100 text-center gap-3">
@@ -627,7 +231,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">
+        <div class="col-md-6">
           <div class="card card-feature card-animated text-center p-4 h-100 tema-card tema-habitacao position-relative overflow-hidden" role="group">
             <img src="img/indicadores/habitacaoesaneamento.png" alt="Fundo Habitação e Saneamento" class="tema-card-bg-img" loading="lazy" decoding="async">
             <div class="card-body d-flex flex-column align-items-center justify-content-center h-100 text-center gap-3">
@@ -638,7 +242,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">
+        <div class="col-md-6">
           <div class="card card-feature card-animated text-center p-4 h-100 tema-card tema-mercado position-relative overflow-hidden" role="group">
             <img src="img/indicadores/mercadodetrabalho.png" alt="Fundo Mercado de Trabalho" class="tema-card-bg-img" loading="lazy" decoding="async">
             <div class="card-body d-flex flex-column align-items-center justify-content-center h-100 text-center gap-3">
@@ -649,7 +253,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">
+        <div class="col-md-6">
           <div class="card card-feature card-animated text-center p-4 h-100 tema-card tema-economia position-relative overflow-hidden" role="group">
             <img src="img/indicadores/economia.png" alt="Fundo Economia" class="tema-card-bg-img" loading="lazy" decoding="async">
             <div class="card-body d-flex flex-column align-items-center justify-content-center h-100 text-center gap-3">
@@ -660,7 +264,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">
+        <div class="col-md-6">
           <div class="card card-feature card-animated text-center p-4 h-100 tema-card tema-pib position-relative overflow-hidden" role="group">
             <img src="img/indicadores/pib.png" alt="Fundo Produto Interno Bruto" class="tema-card-bg-img" loading="lazy" decoding="async">
             <div class="card-body d-flex flex-column align-items-center justify-content-center h-100 text-center gap-3">
@@ -671,7 +275,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">
+        <div class="col-md-6">
           <div class="card card-feature card-animated text-center p-4 h-100 tema-card tema-financas position-relative overflow-hidden" role="group">
             <img src="img/indicadores/financaspublicas.png" alt="Fundo Finanças Públicas" class="tema-card-bg-img" loading="lazy" decoding="async">
             <div class="card-body d-flex flex-column align-items-center justify-content-center h-100 text-center gap-3">
@@ -682,7 +286,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">
+        <div class="col-md-6">
           <div class="card card-feature card-animated text-center p-4 h-100 tema-card tema-balanca position-relative overflow-hidden" role="group">
             <img src="img/indicadores/balancacomercial.png" alt="Fundo Balança Comercial" class="tema-card-bg-img" loading="lazy" decoding="async">
             <div class="card-body d-flex flex-column align-items-center justify-content-center h-100 text-center gap-3">
@@ -693,7 +297,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">
+        <div class="col-md-6">
           <div class="card card-feature card-animated text-center p-4 h-100 tema-card tema-meio-ambiente position-relative overflow-hidden" role="group">
             <img src="img/indicadores/meioambiente.png" alt="Fundo Meio Ambiente" class="tema-card-bg-img" loading="lazy" decoding="async">
             <div class="card-body d-flex flex-column align-items-center justify-content-center h-100 text-center gap-3">
@@ -704,7 +308,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">
+        <div class="col-md-6">
           <div class="card card-feature card-animated text-center p-4 h-100 tema-card tema-ciencia-tecnologia position-relative overflow-hidden" role="group">
             <img src="img/indicadores/cienciaetecnologia.png" alt="Fundo Ciência e Tecnologia" class="tema-card-bg-img" loading="lazy" decoding="async">
             <div class="card-body d-flex flex-column align-items-center justify-content-center h-100 text-center gap-3">
@@ -715,7 +319,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">
+        <div class="col-md-6">
           <div class="card card-feature card-animated text-center p-4 h-100 tema-card tema-infraestrutura position-relative overflow-hidden" role="group">
             <img src="img/indicadores/infraestrutura.png" alt="Fundo Infraestrutura" class="tema-card-bg-img" loading="lazy" decoding="async">
             <div class="card-body d-flex flex-column align-items-center justify-content-center h-100 text-center gap-3">
@@ -726,7 +330,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">
+        <div class="col-md-6">
           <div class="card card-feature card-animated text-center p-4 h-100 tema-card tema-territorio position-relative overflow-hidden" role="group">
             <img src="img/indicadores/territorio.png" alt="Fundo Território" class="tema-card-bg-img" loading="lazy" decoding="async">
             <div class="card-body d-flex flex-column align-items-center justify-content-center h-100 text-center gap-3">
@@ -793,7 +397,7 @@
             </a>
           </div>
           <div class="col-lg-4 col-md-6">
-            <a href="mapas/mapasPCN2024.rar" class="product-card" aria-label="Acessar repositório de mapas">
+            <a href="project.html" class="product-card" aria-label="Acessar repositório de mapas">
               <i class="bi bi-map"></i>
               <h5>Repositório de Mapas</h5>
               <p>Acesse mapas temáticos e territoriais</p>
@@ -853,25 +457,39 @@
 
   <button id="btnTop" title="Voltar ao topo" aria-label="Voltar ao topo" type="button"><i class="bi bi-arrow-up"></i></button>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script>
+    let modalTrigger = null;
+    const modal = document.getElementById('contentModal');
+    const backdrop = document.getElementById('modalBackdrop');
+    const modalBody = document.getElementById('contentModalBody');
+    const modalTitle = document.getElementById('contentModalLabel');
+    const modalFullLink = document.getElementById('modal-open-full');
+
     function openCustomModal(event) {
       event.preventDefault();
-      const trigger = event.currentTarget;
-      const url = trigger.getAttribute('data-content-url');
-      const title = trigger.getAttribute('data-modal-title') || 'Conteúdo';
-      document.getElementById('contentModalLabel').textContent = title;
-      document.getElementById('modal-open-full').href = url;
-      document.getElementById('contentModalBody').innerHTML = '<iframe src="' + url + '" style="width:100%;height:100%;min-height:70vh;border:0;"></iframe>';
-      document.getElementById('modalBackdrop').style.display = 'block';
-      document.getElementById('contentModal').style.display = 'block';
+      modalTrigger = event.currentTarget;
+      const url = modalTrigger.getAttribute('data-content-url');
+      const title = modalTrigger.getAttribute('data-modal-title') || 'Conteúdo';
+      modalTitle.textContent = title;
+      modalFullLink.href = url;
+      modalBody.innerHTML = '<iframe title="Conteúdo editorial" src="' + encodeURI(url) + '" loading="lazy"></iframe>';
+      modal.hidden = false;
+      backdrop.hidden = false;
+      document.body.classList.add('modal-open');
+      modalTrigger.setAttribute('aria-expanded', 'true');
+      modal.querySelector('.custom-modal-close')?.focus();
     }
 
     function closeCustomModal() {
-      document.getElementById('modalBackdrop').style.display = 'none';
-      document.getElementById('contentModal').style.display = 'none';
-      document.getElementById('contentModalBody').innerHTML = '<div class="text-center py-5"><div class="spinner-border"></div></div>';
+      if (modal.hidden) return;
+      modal.hidden = true;
+      backdrop.hidden = true;
+      modalBody.replaceChildren();
+      document.body.classList.remove('modal-open');
+      modalTrigger?.setAttribute('aria-expanded', 'false');
+      modalTrigger?.focus();
+      modalTrigger = null;
     }
 
     function toggleAccessibilityMenu(event) {
@@ -880,16 +498,24 @@
       menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
     }
 
-    $(function () {
-      $('#spinner').removeClass('show');
-      $('#btnTop').on('click', function () { $('html, body').animate({ scrollTop: 0 }, 1200); });
-      $(window).on('scroll', function () {
-        if ($(this).scrollTop() > 300) {
-          $('#btnTop').fadeIn('slow');
-        } else {
-          $('#btnTop').fadeOut('slow');
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('spinner')?.classList.remove('show');
+      document.addEventListener('keydown', (event) => {
+        if (modal.hidden) return;
+        if (event.key === 'Escape') { closeCustomModal(); return; }
+        if (event.key === 'Tab') {
+          const focusables = [...modal.querySelectorAll('button, a[href], iframe')].filter(el => !el.disabled);
+          if (!focusables.length) return;
+          const first = focusables[0], last = focusables[focusables.length - 1];
+          if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+          else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
         }
       });
+      const topButton = document.getElementById('btnTop');
+      const updateTopButton = () => { topButton.style.display = window.scrollY > 300 ? 'block' : 'none'; };
+      topButton?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+      window.addEventListener('scroll', updateTopButton, { passive: true });
+      updateTopButton();
     });
   </script>
 </body>

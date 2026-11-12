@@ -1,16 +1,12 @@
 /* este css estiliza as tabelas em HTML */
 @charset "utf-8";
 
-@font-face{/* fonte da pagina */
-    font-family: 'fonteTrebuchet';/* nome da fonte */
-    src: url(../font/trebuchet-ms.ttf);/* caminho da fonte */
-}
-
 body{/* configura o corpo da pagina */
-    font-family: fonteTrebuchet;/* tipo de fonte */
-    color: #fbfbfb;/* cor da fonte */
-    padding: 0px;/* espacamento interno */
-    margin: 0px;/* espacamento externo */
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #1f2937;
+    background: #f7f9fb;
+    padding: 0;
+    margin: 0;
 }
 table{/* altera a tag table */
     margin: auto;/* centraliza tabela */
@@ -50,4 +46,57 @@ table{/* altera a tag table */
     -ms-transition: all 0.5s linear;/* transicao ms explorer */
     -o-transition: all 0.5s linear;/* transicao opera */
     transition: all 0.5s linear;/* transicao */
+}
+
+.table-page {
+    width: min(100% - 2rem, 90rem);
+    margin: 0 auto 2rem;
+}
+
+.table-page > table:first-of-type {
+    width: 100%;
+    margin-block: 1rem;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    background: #fff;
+    border: 1px solid #dbe4ec;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 30px rgba(15, 44, 34, 0.08);
+    -webkit-overflow-scrolling: touch;
+}
+
+.table-responsive:focus {
+    outline: 3px solid #2f7f2f;
+    outline-offset: 3px;
+}
+
+.table-responsive table {
+    margin: 0 auto;
+    min-width: max-content;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+.logo img { max-width: 100%; object-fit: contain; }
+.logo a:focus-visible { outline: 3px solid #2f7f2f; outline-offset: 3px; }
+
+@media (max-width: 640px) {
+    .titlecenter { font-size: 1.5rem; margin-bottom: 0.75rem; }
+    .table-page { width: min(100% - 1rem, 90rem); }
+    .logo td { width: auto; padding: 0.25rem; }
+    .logo img { height: auto; max-height: 48px; }
 }
