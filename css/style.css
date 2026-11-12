@@ -606,7 +606,7 @@ h1, h2, h3, h4, h5, .navbar-brand {
   background: linear-gradient(120deg, rgba(22,59,107,0.16) 0%, rgba(47,127,47,0.08) 100%);
 }
 .hero-background { position: absolute; inset: 0; }
-.hero-image { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hero-image { width: 100%; height: 100%; object-fit: contain; display: block; background: #63c85b; }
 .hero-overlay {
   position: absolute;
   inset: 0;
