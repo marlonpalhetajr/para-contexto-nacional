@@ -598,26 +598,31 @@ h1, h2, h3, h4, h5, .navbar-brand {
 
 .hero-section-modern {
   position: relative;
-  height: min(calc(100vh - 84px), 56.306vw);
-  min-height: 560px;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(120deg, rgba(22,59,107,0.16) 0%, rgba(47,127,47,0.08) 100%);
+  display: block;
+  background: #63c85b;
 }
-.hero-background { position: absolute; inset: 0; }
-.hero-image { width: 100%; height: 100%; object-fit: contain; display: block; background: #63c85b; }
+.hero-background {
+  position: relative;
+  width: 100%;
+}
+.hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+  object-fit: initial;
+}
 .hero-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, rgba(8, 30, 18, 0.18) 0%, rgba(8, 30, 18, 0.34) 100%);
 }
 .hero-content {
-  position: relative;
+  position: absolute;
+  inset: 0;
   z-index: 2;
   width: 100%;
-  min-height: 0;
   height: 100%;
   display: flex;
   align-items: flex-end;
