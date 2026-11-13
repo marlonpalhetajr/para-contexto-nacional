@@ -404,6 +404,7 @@
     }
 
     document.addEventListener('DOMContentLoaded', () => {
+      window.scrollTo(0, 0);
       document.getElementById('spinner')?.classList.remove('show');
       document.addEventListener('keydown', (event) => {
         if (modal.hidden) return;
