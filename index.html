@@ -1,20 +1,20 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pará no Contexto Nacional | FAPESPA</title>
-  <meta name="description" content="Pará no Contexto Nacional 2024 - indicadores sociais, econômicos e territoriais organizados pela FAPESPA.">
+  <meta name="description" content="Pará no Contexto Nacional - indicadores sociais, econômicos e territoriais organizados pela FAPESPA.">
   <meta name="keywords" content="PCN, Pará no Contexto Nacional, FAPESPA, indicadores, demografia, economia, território">
   <meta property="og:title" content="Pará no Contexto Nacional | FAPESPA">
-  <meta property="og:description" content="Indicadores e dados do Pará no Contexto Nacional 2024, organizados pela FAPESPA.">
-  <meta property="og:image" content="img/pcn2024.png">
+  <meta property="og:description" content="Indicadores e dados do Pará no Contexto Nacional, organizados pela FAPESPA.">
+  <meta property="og:image" content="img/759.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Pará no Contexto Nacional | FAPESPA">
-  <meta name="twitter:description" content="Indicadores e dados do Pará no Contexto Nacional 2024, organizados pela FAPESPA.">
-  <meta name="twitter:image" content="img/pcn2024.png">
+  <meta name="twitter:description" content="Indicadores e dados do Pará no Contexto Nacional, organizados pela FAPESPA.">
+  <meta name="twitter:image" content="img/759.png">
   <link rel="canonical" href="https://www.fapespa.pa.gov.br/para-no-contexto-nacional-2/">
   <link rel="icon" href="img/logo-para1.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,23 +53,23 @@
     <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
   </div>
 
-  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0" id="navbar">
+  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0" id="navbar" aria-label="Navegação principal">
     <a href="https://www.fapespa.pa.gov.br/" target="_blank" rel="noopener noreferrer" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
       <h1 class="m-3">FAPESPA</h1>
     </a>
-    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Alternar navegação">
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Alternar navegação">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav ms-auto p-4 p-lg-0 align-items-lg-center">
-        <li class="nav-item"><a class="nav-link active" href="#inicio">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#inicio" aria-current="page">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#pcn">PCN</a></li>
         <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
         <li class="nav-item position-relative">
-          <button id="acess-open-btn" class="nav-link border-0 bg-transparent" title="Acessibilidade" onclick="toggleAccessibilityMenu(event);" type="button">
-            ♿ <span class="d-none d-lg-inline">Acessibilidade</span>
+          <button id="acess-open-btn" class="nav-link border-0 bg-transparent" title="Acessibilidade" aria-controls="acessibilidadeMenu" aria-expanded="false" onclick="toggleAccessibilityMenu(event);" type="button">
+            <i class="bi bi-universal-access" aria-hidden="true"></i> <span class="d-none d-lg-inline">Acessibilidade</span>
           </button>
-          <div id="acessibilidadeMenu" class="acess-dropdown" style="display:none;">
+          <div id="acessibilidadeMenu" class="acess-dropdown" hidden>
             <div class="acess-section-title">Visão</div>
             <div class="acess-row">
               <button id="acess-contrast" class="acess-control" type="button">Alto contraste</button>
@@ -113,7 +113,7 @@
   </nav>
 
   <main id="inicio">
-    <section class="hero-section-modern js-reveal is-visible" id="pcn"><div class="hero-background"><img src="img/pcn2024.png" alt="Capa do Pará no Contexto Nacional 2024" class="hero-image" width="1100" height="700" decoding="async" fetchpriority="high"><div class="hero-overlay"></div></div><div class="hero-content"><div class="hero-text-wrapper"><h1 class="hero-title animate-fade-in" aria-hidden="true" style="visibility:hidden;">Pará no Contexto Nacional</h1><div class="hero-cta-group hero-cta-single animate-fade-in-delay-2"><a href="#" data-content-url="apresentacao.html" data-modal-title="Apresentação" class="btn-hero btn-hero-primary" aria-label="Abrir apresentação em modal" onclick="openCustomModal(event);"><i class="bi bi-play-circle me-2"></i>Apresentação</a></div></div></div></section>
+    <section class="hero-section-modern js-reveal is-visible" id="pcn"><div class="hero-background"><img src="img/759.png" alt="Capa do Pará no Contexto Nacional" class="hero-image" width="1100" height="700" decoding="async" fetchpriority="high"><div class="hero-overlay"></div></div><div class="hero-content"><div class="hero-text-wrapper"><h1 class="hero-title animate-fade-in" aria-hidden="true" style="visibility:hidden;">Pará no Contexto Nacional</h1><div class="hero-cta-group hero-cta-single animate-fade-in-delay-2"><a href="#" data-content-url="apresentacao.html" data-modal-title="Apresentação" class="btn-hero btn-hero-primary" aria-label="Abrir apresentação em modal" onclick="openCustomModal(event);"><i class="bi bi-play-circle me-2"></i>Apresentação</a></div></div></div></section>
 
      <!-- CARDS DE ACESSO RÁPIDO (Sumário, Glossário, Expediente) -->
   <section class="quick-access-section js-reveal section-break" aria-label="Acesso rapido">
@@ -125,7 +125,7 @@
               <i class="bi bi-journal-text"></i>
             </div>
             <h5 class="card-modern-title" data-i18n="btn_sumario">Sumário</h5>
-            <p class="card-modern-text" data-i18n="btn_sumario_text">Veja o sumário do Pará no Contexto Nacional 2024.</p>
+            <p class="card-modern-text" data-i18n="btn_sumario_text">Veja o sumário do Pará no Contexto Nacional.</p>
             <a href="sumario.html" target="_blank" class="btn-card-modern" aria-label="Acessar sumário">
               Acessar <i class="bi bi-arrow-right ms-2"></i>
             </a>
@@ -151,7 +151,7 @@
               <i class="bi bi-file-earmark-text"></i>
             </div>
             <h5 class="card-modern-title" data-i18n="btn_expediente">Expediente</h5>
-            <p class="card-modern-text" data-i18n="btn_expediente_text">Informações sobre a equipe e produção do PCN 2024.</p>
+            <p class="card-modern-text" data-i18n="btn_expediente_text">Informações sobre a equipe e produção do PCN.</p>
             <a href="expediente.html" target="_blank" class="btn-card-modern" aria-label="Acessar expediente">
               Acessar <i class="bi bi-arrow-right ms-2"></i>
             </a>
@@ -171,7 +171,7 @@
               <div class="tema-icon" aria-hidden="true"><i class="bi bi-people-fill"></i></div>
               <h5 class="mb-0">Demografia</h5>
               <p class="small mb-0" style="text-align:center;">População total, por faixa etária e número de eleitores etc.</p>
-              <a href="2-demografia.html" class="btn btn-tema-card btn-sm">Ver dados <span class="sr-only">de Demografia</span></a>
+              <a href="demografia-dashboard.html" class="btn btn-tema-card btn-sm">Ver dados <span class="sr-only">de Demografia</span></a>
             </div>
           </div>
         </div>
@@ -182,7 +182,7 @@
               <div class="tema-icon" aria-hidden="true"><i class="bi bi-mortarboard-fill"></i></div>
               <h5 class="mb-0">Educação</h5>
               <p class="small mb-0" style="text-align:center;">Indicadores da rede educacional do estado.</p>
-              <a href="3-educacao.html" class="btn btn-tema-card btn-sm">Ver dados <span class="sr-only">de Educação</span></a>
+              <a href="dashboard.html?tema=educacao" class="btn btn-tema-card btn-sm">Ver dados <span class="sr-only">de Educação</span></a>
             </div>
           </div>
         </div>
@@ -193,7 +193,7 @@
               <div class="tema-icon" aria-hidden="true"><i class="bi bi-heart-pulse-fill"></i></div>
               <h5 class="mb-0">Saúde</h5>
               <p class="small mb-0" style="text-align:center;">Acesso, estrutura e indicadores de saúde.</p>
-              <a href="4-saude.html" class="btn btn-tema-card btn-sm">Ver dados <span class="sr-only">de Saúde</span></a>
+              <a href="dashboard.html?tema=saude" class="btn btn-tema-card btn-sm">Ver dados <span class="sr-only">de Saúde</span></a>
             </div>
           </div>
         </div>
@@ -204,7 +204,7 @@
               <div class="tema-icon" aria-hidden="true"><i class="bi bi-person-hearts"></i></div>
               <h5 class="mb-0">Inclusão Social</h5>
               <p class="small mb-0" style="text-align:center;">Famílias cadastradas, beneficiadas e valor aplicado.</p>
-              <a href="5-inclusao-social.html" class="btn btn-tema-card btn-sm">Ver dados <span class="sr-only">de Inclusão Social</span></a>
+              <a href="dashboard.html?tema=inclusao" class="btn btn-tema-card btn-sm">Ver dados <span class="sr-only">de Inclusão Social</span></a>
             </div>
           </div>
         </div>
@@ -215,7 +215,7 @@
               <div class="tema-icon" aria-hidden="true"><i class="bi bi-heart-fill"></i></div>
               <h5 class="mb-0">Previdência Social</h5>
               <p class="small mb-0" style="text-align:center;">Benefícios previdenciários emitidos e valores aplicados.</p>
-              <a href="6-previdencia-social.html" class="btn btn-tema-card btn-sm">Ver dados <span class="sr-only">de Previdência Social</span></a>
+              <a href="dashboard.html?tema=previdencia" class="btn btn-tema-card btn-sm">Ver dados <span class="sr-only">de Previdência Social</span></a>
             </div>
           </div>
         </div>
@@ -226,7 +226,7 @@
               <div class="tema-icon" aria-hidden="true"><i class="bi bi-shield-lock-fill"></i></div>
               <h5 class="mb-0">Segurança</h5>
               <p class="small mb-0" style="text-align:center;">Taxa de homicídios e mortes no trânsito.</p>
-              <a href="7-seguranca.html" class="btn btn-tema-card btn-sm">Ver dados <span class="sr-only">de Segurança</span></a>
+              <a href="dashboard.html?tema=seguranca" class="btn btn-tema-card btn-sm">Ver dados <span class="sr-only">de Segurança</span></a>
             </div>
           </div>
         </div>
@@ -237,20 +237,70 @@
               <div class="tema-icon" aria-hidden="true"><i class="bi bi-house-door-fill"></i></div>
               <h5 class="mb-0">Habitação e Saneamento</h5>
               <p class="small mb-0" style="text-align:center;">Rede geral de água, esgoto e coleta de lixo.</p>
-              <a href="8-habitacao-e-saneamento.html" class="btn btn-tema-card btn-sm">Ver dados <span class="sr-only">de Habitação e Saneamento</span></a>
+              <a href="dashboard.html?tema=habitacao" class="btn btn-tema-card btn-sm">Ver dados <span class="sr-only">de Habitação e Saneamento</span></a>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
           <div class="card card-feature card-animated text-center p-4 h-100 tema-card tema-economia position-relative overflow-hidden" role="group">
-            <img src="img/indicadores/economia.png" alt="Fundo Economia" class="tema-card-bg-img" loading="lazy" decoding="async">
+            <img src="img/indicadores/cards/economia.png" alt="Fundo Economia" class="tema-card-bg-img" loading="lazy" decoding="async">
             <div class="card-body d-flex flex-column align-items-center justify-content-center h-100 text-center gap-3">
               <div class="tema-icon" aria-hidden="true"><i class="bi bi-graph-up-arrow"></i></div>
               <h5 class="mb-0">Economia</h5>
               <p class="small mb-0" style="text-align:center;">Agricultura, extrativismo, indústria, serviços e comércio.</p>
-              <a href="10-economia.html" class="btn btn-tema-card btn-sm">Ver dados <span class="sr-only">de Economia</span></a>
+              <a href="economia.html" class="btn btn-tema-card btn-sm">Ver subtemas <span class="sr-only">de Economia</span></a>
             </div>
           </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card card-feature card-animated text-center p-4 h-100 tema-card tema-financas position-relative overflow-hidden" role="group">
+            <img src="img/indicadores/cards/financas.png" alt="Fundo Finanças Públicas" class="tema-card-bg-img" loading="lazy" decoding="async">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center h-100 text-center gap-3">
+              <div class="tema-icon" aria-hidden="true"><i class="bi bi-cash-coin"></i></div>
+              <h5 class="mb-0">Finanças Públicas</h5>
+              <p class="small mb-0" style="text-align:center;">Receitas, despesas e resultados das contas públicas.</p>
+              <a href="dashboard.html?tema=financas" class="btn btn-tema-card btn-sm">Ver dados <span class="sr-only">de Finanças Públicas</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card card-feature card-animated text-center p-4 h-100 tema-card tema-balanca position-relative overflow-hidden" role="group">
+            <img src="img/indicadores/cards/balanca.png" alt="Fundo Balança Comercial" class="tema-card-bg-img" loading="lazy" decoding="async">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center h-100 text-center gap-3">
+              <div class="tema-icon" aria-hidden="true"><i class="bi bi-arrow-left-right"></i></div>
+              <h5 class="mb-0">Balança Comercial</h5>
+              <p class="small mb-0" style="text-align:center;">Exportações, importações e saldo comercial do Pará.</p>
+              <a href="dashboard.html?tema=balanca" class="btn btn-tema-card btn-sm">Ver dados <span class="sr-only">de Balança Comercial</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card card-feature card-animated text-center p-4 h-100 tema-card tema-infraestrutura position-relative overflow-hidden" role="group">
+            <img src="img/indicadores/cards/infra.png" alt="Fundo Infraestrutura" class="tema-card-bg-img" loading="lazy" decoding="async">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center h-100 text-center gap-3">
+              <div class="tema-icon" aria-hidden="true"><i class="bi bi-buildings-fill"></i></div>
+              <h5 class="mb-0">Infraestrutura</h5>
+              <p class="small mb-0" style="text-align:center;">Transportes, energia, saneamento e conectividade.</p>
+              <a href="dashboard.html?tema=infraestrutura" class="btn btn-tema-card btn-sm">Ver dados <span class="sr-only">de Infraestrutura</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="economia-subtemas" class="economia-subtemas" hidden>
+        <div class="economia-subtemas-header">
+          <span class="section-kicker">Economia</span>
+          <h3>Subtemas</h3>
+          <p>Selecione um segmento para consultar os dados econômicos.</p>
+        </div>
+        <div class="row g-3">
+          <div class="col-lg-3 col-md-4 col-sm-6"><a class="economia-subtema" href="dashboard.html?tema=agricultura">Agricultura</a></div>
+          <div class="col-lg-3 col-md-4 col-sm-6"><a class="economia-subtema" href="dashboard.html?tema=comercio">Comércio</a></div>
+          <div class="col-lg-3 col-md-4 col-sm-6"><a class="economia-subtema" href="dashboard.html?tema=construcao">Construção Civil</a></div>
+          <div class="col-lg-3 col-md-4 col-sm-6"><a class="economia-subtema" href="dashboard.html?tema=extrativa">Extrativa e Silvicultura</a></div>
+          <div class="col-lg-3 col-md-4 col-sm-6"><a class="economia-subtema" href="dashboard.html?tema=industria">Indústria</a></div>
+          <div class="col-lg-3 col-md-4 col-sm-6"><a class="economia-subtema" href="dashboard.html?tema=pecuaria">Pecuária</a></div>
+          <div class="col-lg-3 col-md-4 col-sm-6"><a class="economia-subtema" href="dashboard.html?tema=servicos">Serviços</a></div>
+          <div class="col-lg-3 col-md-4 col-sm-6"><a class="economia-subtema" href="10-economia.html">Ver todos os dados</a></div>
         </div>
       </div>
     </section>
@@ -271,7 +321,7 @@
         <div class="col-lg-3 col-md-6">
           <h5 class="footer-title mb-4">Contato</h5>
           <ul class="list-unstyled small text-light">
-            <li class="mb-3"><i class="bi bi-geo-alt me-2 text-primary"></i><span>Avenida Presidente Vargas, nº 670. Belém - PA</span></li>
+            <li class="mb-3"><i class="bi bi-geo-alt me-2 text-primary"></i><span>Av. Brg. Protásio, 621 - Marco, Belém - PA</span></li>
             <li class="mb-3"><i class="bi bi-telephone me-2 text-primary"></i><span>(91) 3323-2550</span></li>
             <li class="mb-3"><i class="bi bi-clock me-2 text-primary"></i><span>Seg-Sex: 8h às 14h</span></li>
             <li><i class="bi bi-envelope me-2 text-primary"></i><a href="mailto:contato@fapespa.pa.gov.br" class="text-light text-decoration-none">contato@fapespa.pa.gov.br</a></li>
@@ -290,7 +340,7 @@
         <div class="col-lg-3 col-md-6">
           <h5 class="footer-title mb-4">Localização</h5>
           <div class="map-embed rounded">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.61483842183!2d-48.4907923!3d-1.4589201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a488a1b633b497%3A0xf63d2e2601a4e1e8!2sFundação%20Amazônia%20de%20Amparo%20a%20Estudos%20e%20Pesquisas%20-%20FAPESPA!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização FAPESPA"></iframe>
+            <iframe src="https://www.google.com/maps?q=Av.%20Brg.%20Prot%C3%A1sio%2C%20621%20-%20Marco%2C%20Bel%C3%A9m%20-%20PA&amp;output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização FAPESPA"></iframe>
           </div>
         </div>
       </div>
@@ -299,7 +349,7 @@
 
   <div class="footer-copyright text-center py-4 section-break">
     <div class="container">
-      <small class="text-muted">© PCN 2024, Todos os direitos reservados. <a href="https://www.fapespa.pa.gov.br/" class="text-muted text-decoration-none">FAPESPA</a></small>
+      <small class="text-muted">© Pará no Contexto Nacional, Todos os direitos reservados. <a href="https://www.fapespa.pa.gov.br/" class="text-muted text-decoration-none">FAPESPA</a></small>
     </div>
   </div>
 
@@ -313,6 +363,10 @@
     const modalBody = document.getElementById('contentModalBody');
     const modalTitle = document.getElementById('contentModalLabel');
     const modalFullLink = document.getElementById('modal-open-full');
+
+    modal.addEventListener('click', (event) => {
+      if (event.target === modal) closeCustomModal();
+    });
 
     function openCustomModal(event) {
       event.preventDefault();
@@ -343,7 +397,10 @@
     function toggleAccessibilityMenu(event) {
       event.preventDefault();
       const menu = document.getElementById('acessibilidadeMenu');
-      menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+      const opening = menu.hidden;
+      menu.hidden = !opening;
+      event.currentTarget.setAttribute('aria-expanded', String(opening));
+      if (opening) menu.querySelector('button')?.focus();
     }
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -357,6 +414,16 @@
           const first = focusables[0], last = focusables[focusables.length - 1];
           if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
           else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+        }
+      });
+
+      document.addEventListener('keydown', (event) => {
+        const menu = document.getElementById('acessibilidadeMenu');
+        const opener = document.getElementById('acess-open-btn');
+        if (event.key === 'Escape' && menu && !menu.hidden) {
+          menu.hidden = true;
+          opener?.setAttribute('aria-expanded', 'false');
+          opener?.focus();
         }
       });
       const topButton = document.getElementById('btnTop');

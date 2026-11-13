@@ -3,7 +3,7 @@
 //escrever o tiulo nas tabelas
 window.onload = function () {
   var titulo = document.getElementById('title');
-  titulo.innerHTML = '<div>Pará no Contexto Nacional 2024</div>';
+  titulo.innerHTML = '<div>Pará no Contexto Nacional</div>';
 }; //Fim
 
 //desmarcar o input RADIO

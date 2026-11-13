@@ -331,6 +331,45 @@ body > table > tbody {
   }
 }
 
+/* Modal editorial: centralização final após as regras responsivas legadas. */
+.modal-backdrop-custom {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 1040 !important;
+}
+.custom-modal {
+  position: fixed !important;
+  inset: 0 !important;
+  transform: none !important;
+  z-index: 1050 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 1rem !important;
+  overflow: hidden !important;
+}
+.custom-modal-content {
+  width: min(1100px, 100%) !important;
+  max-height: min(92vh, 900px) !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  border-radius: 18px !important;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, .32) !important;
+}
+.custom-modal-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  min-height: 58px;
+  padding: .8rem 1.25rem !important;
+}
+.custom-modal-header h5 { display: block !important; margin: 0 !important; color: #163b6b; font-size: 1.1rem; }
+.custom-modal-body { padding: 0 !important; background: #f7f9fb; }
+.custom-modal-footer { display: flex; align-items: center; justify-content: flex-end; gap: .65rem; }
+
 @media (max-width: 575.98px) {
   body {
     font-size: .95rem;

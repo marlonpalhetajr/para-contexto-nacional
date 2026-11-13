@@ -1,6 +1,6 @@
-# Pará no Contexto Nacional 2024
+# Pará no Contexto Nacional
 
-Portal estático da FAPESPA para consulta dos indicadores, tabelas, planilhas e mapas da publicação **Pará no Contexto Nacional 2024 (PCN 2024)**.
+Portal estático da FAPESPA para consulta dos indicadores, tabelas, planilhas e mapas da publicação **Pará no Contexto Nacional (PCN)**.
 
 ## Executar localmente
 

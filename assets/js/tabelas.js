@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const title = document.title || 'Tabela PCN 2024';
+  const title = document.title || 'Tabela PCN';
   const heading = document.getElementById('title');
-  if (heading) heading.textContent = 'Pará no Contexto Nacional 2024';
+  if (heading) heading.textContent = 'Pará no Contexto Nacional';
 
   const tables = [...document.querySelectorAll('main table')];
   const dataTable = tables.find((table) => !table.querySelector('tr.logo')) || tables.at(-1);

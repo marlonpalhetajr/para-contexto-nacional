@@ -14,6 +14,7 @@
 }
 
 .pcn-page-intro { margin-top: -7rem; position: relative; z-index: 3; }
+.pcn-editorial-page .pcn-page-intro { margin-top: 2rem; }
 .pcn-page-intro-card {
   max-width: 980px; margin: 0 auto; padding: 2.4rem; text-align: center;
   background: #fff; border-radius: 20px; box-shadow: 0 18px 45px rgba(15,45,82,.16);
@@ -32,6 +33,7 @@
 .pcn-shell .accordion-body li { margin: .55rem 0; }
 .pcn-shell .accordion-body a { color: #245f3b; text-decoration: none; }
 .pcn-shell .accordion-body a:hover { color: #163b6b; text-decoration: underline; }
+.pcn-shell .accordion-body a { overflow-wrap: anywhere; }
 
 #principais-temas .tema-card { min-height: 400px; }
 #principais-temas .tema-card-bg-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
@@ -80,4 +82,280 @@
   .pcn-page-intro { margin-top: -4rem; padding-inline: .75rem; }
   .pcn-page-intro-card, .pcn-shell { padding: 1.35rem; }
   #principais-temas .tema-card { min-height: 340px; }
+}
+
+/* Cards e botões seguem a paleta institucional do Anuário. */
+.pcn-thematic-page .pcn-shell,
+.pcn-editorial-page .pcn-shell,
+.pcn-maps-page .pcn-shell,
+.quick-access-section .card-modern { border: 1px solid rgba(22, 59, 107, .10); box-shadow: 0 8px 24px rgba(22, 59, 107, .08); }
+.quick-access-section .card-modern:hover { box-shadow: 0 14px 32px rgba(22, 59, 107, .14); }
+.quick-access-section .card-icon-wrapper { border-radius: 16px; background: linear-gradient(135deg, var(--primary), #58a957); }
+.quick-access-section .card-icon-wrapper.bg-success-gradient { background: linear-gradient(135deg, var(--secondary), #2e5e91); }
+.quick-access-section .card-icon-wrapper.bg-info-gradient { background: linear-gradient(135deg, #2f7f2f, #2e5e91); }
+.quick-access-section .btn-card-modern,
+#principais-temas .tema-card .btn { background: var(--primary); border: 1px solid var(--primary); border-radius: 999px; color: #fff; font-weight: 700; }
+.quick-access-section .btn-card-modern:hover,
+#principais-temas .tema-card .btn:hover { background: var(--secondary); border-color: var(--secondary); color: #fff; }
+#principais-temas .tema-card .btn {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .92);
+  color: #fff;
+  min-width: 110px;
+  padding: .65rem 1.15rem;
+}
+#principais-temas .tema-card .btn:hover,
+#principais-temas .tema-card .btn:focus-visible {
+  background: #fff;
+  border-color: #fff;
+  color: var(--secondary);
+}
+#principais-temas .tema-card { border-radius: 18px; box-shadow: 0 8px 24px rgba(22, 59, 107, .12); height: 380px; min-height: 380px; overflow: hidden; transition: transform .25s ease, box-shadow .25s ease; }
+#principais-temas .tema-card:hover { transform: translateY(-6px); box-shadow: 0 16px 34px rgba(22, 59, 107, .22); }
+#principais-temas .tema-card:focus-within { outline: 3px solid rgba(47, 127, 47, .38); outline-offset: 3px; }
+#principais-temas .tema-card .tema-card-bg-img { transition: transform .35s ease; }
+#principais-temas .tema-card:hover .tema-card-bg-img { transform: scale(1.04); }
+#principais-temas .tema-card .card-body { height: 100%; min-height: 0; }
+#principais-temas .tema-card .tema-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  flex: 0 0 4.5rem;
+}
+#principais-temas .tema-card .tema-icon i { font-size: 2.75rem !important; line-height: 1; }
+#principais-temas .tema-card::before {
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(8, 24, 38, .42) 0%, rgba(8, 24, 38, .62) 58%, rgba(8, 24, 38, .78) 100%);
+}
+#principais-temas .tema-card:hover::before {
+  background: linear-gradient(180deg, rgba(8, 24, 38, .34) 0%, rgba(8, 24, 38, .54) 58%, rgba(8, 24, 38, .72) 100%);
+}
+#principais-temas .tema-card h5,
+#principais-temas .tema-card p,
+#principais-temas .tema-card .tema-icon i {
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, .55);
+}
+#principais-temas .tema-card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: .85rem !important;
+  padding: 1.25rem 1rem !important;
+}
+#principais-temas .tema-card h5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5em;
+  margin: 0;
+  text-align: center;
+}
+#principais-temas .tema-card p {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  min-height: 4.5em;
+  margin: 0;
+  text-align: center;
+}
+#principais-temas .tema-card .btn { margin-top: auto; }
+#principais-temas .row {
+  row-gap: 1.25rem;
+  column-gap: 1.25rem;
+}
+#principais-temas .row > [class*="col-"] { margin: 0; }
+.quick-access-section .row { row-gap: 1.5rem; }
+
+.economia-subtemas {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(22, 59, 107, .12);
+  border-radius: 18px;
+  background: #f7f9fb;
+  box-shadow: 0 8px 24px rgba(22, 59, 107, .08);
+}
+.economia-subtemas-header { margin-bottom: 1rem; text-align: center; }
+.economia-subtemas-header .section-kicker { color: var(--primary); font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.economia-subtemas-header h3 { margin: .25rem 0; color: var(--secondary); font-weight: 800; }
+.economia-subtemas-header p { margin: 0; color: #617083; }
+.economia-subtema {
+  display: flex;
+  min-height: 66px;
+  align-items: center;
+  justify-content: center;
+  padding: .85rem 1rem;
+  border: 1px solid #dbe4df;
+  border-radius: 12px;
+  background: #fff;
+  color: var(--secondary);
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.economia-subtema:hover,
+.economia-subtema:focus-visible {
+  border-color: var(--primary);
+  box-shadow: 0 8px 18px rgba(22, 59, 107, .12);
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+.economia-page-card {
+  display: flex;
+  position: relative;
+  min-height: 210px;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .7rem;
+  padding: 2rem 1.5rem 1.5rem;
+  overflow: hidden;
+  border: 1px solid rgba(22, 59, 107, .12);
+  border-radius: 16px;
+  background: #fff;
+  color: var(--secondary);
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(22, 59, 107, .08);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.economia-page-card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 5px;
+  background: linear-gradient(90deg, var(--primary), #58a957);
+}
+.economia-page-card i {
+  display: grid;
+  width: 4.25rem;
+  height: 4.25rem;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(47, 127, 47, .10);
+  color: var(--primary);
+  font-size: 2.2rem;
+}
+.economia-page-card span { font-size: 1.2rem; font-weight: 800; }
+.economia-page-card small { max-width: 260px; color: #617083; line-height: 1.5; }
+.economia-page-card:hover,
+.economia-page-card:focus-visible { border-color: var(--primary); box-shadow: 0 14px 30px rgba(22, 59, 107, .16); color: var(--secondary); transform: translateY(-5px); }
+.economia-page .pcn-page-intro { margin-top: 2rem; }
+.economia-page .economia-cards-section { margin-top: 2rem; }
+.economia-page .section-heading h2 { color: var(--secondary); font-weight: 800; }
+@media (max-width: 767.98px) {
+  .economia-page-card { min-height: 185px; padding: 1.65rem 1.25rem 1.25rem; }
+  .economia-page-card i { width: 3.75rem; height: 3.75rem; font-size: 1.95rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #principais-temas .tema-card,
+  #principais-temas .tema-card .tema-card-bg-img,
+  .quick-access-section .card-modern { transition: none; }
+  #principais-temas .tema-card:hover { transform: none; }
+}
+
+/* Componente reutilizável para dashboards Power BI. */
+.dashboard-section {
+  max-width: 1140px;
+  margin: 2rem auto 5rem;
+  padding: 2rem;
+  background: #fff;
+  border: 1px solid rgba(22, 59, 107, .10);
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(22, 59, 107, .08);
+}
+.dashboard-header { margin-bottom: 1.25rem; }
+.dashboard-header .section-kicker {
+  color: var(--primary);
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.dashboard-header h2 { margin: .35rem 0 0; color: var(--secondary); font-weight: 800; }
+.powerbi-container {
+  position: relative;
+  width: 100%;
+  min-height: 620px;
+  overflow: hidden;
+  background: #f7f9fb;
+  border: 1px solid #dbe4df;
+  border-radius: 12px;
+}
+.powerbi-container iframe {
+  display: block;
+  width: 100%;
+  min-height: 620px;
+  border: 0;
+}
+.powerbi-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1rem; }
+.powerbi-fallback { padding: 2rem; color: #617083; text-align: center; }
+.powerbi-fallback a { color: var(--secondary); font-weight: 700; }
+.pcn-dashboard-main { background: #f7f9fb; }
+.dashboard-page-header { max-width: 1140px; margin: .35rem auto .65rem; padding: 0 .5rem; text-align: center; }
+.dashboard-page-header .section-kicker { color: var(--primary); font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.dashboard-page-header h1 { margin: .15rem 0 .15rem; color: var(--secondary); font-size: 1.8rem; font-weight: 800; }
+.dashboard-page-header p { margin: 0; color: #617083; }
+.powerbi-page-frame { padding: .5rem; background: #fff; border-radius: .5rem; box-shadow: 0 12px 32px rgba(15,45,82,.14); }
+.powerbi-page-frame .powerbi-container { min-height: calc(100vh - 235px); border: 0; border-radius: .35rem; }
+.powerbi-page-frame .powerbi-container iframe { min-height: calc(100vh - 235px); height: calc(100vh - 235px); }
+.powerbi-page-frame .powerbi-fallback { min-height: calc(100vh - 235px); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; }
+.powerbi-page-frame .powerbi-fallback i { margin-bottom: 1rem; color: var(--primary); font-size: 3rem; }
+.powerbi-page-frame .powerbi-fallback h2 { color: var(--secondary); font-size: 1.5rem; }
+.powerbi-page-frame .powerbi-fallback p { margin-bottom: .35rem; color: #617083; }
+.powerbi-page-frame .powerbi-fallback small { color: #8290a0; text-align: center; }
+@media (max-width: 767.98px) {
+  .dashboard-section { margin: 1.25rem .75rem 3rem; padding: 1.25rem; }
+  .powerbi-container, .powerbi-container iframe { min-height: 520px; }
+  .powerbi-page-frame .powerbi-container, .powerbi-page-frame .powerbi-fallback { min-height: 70vh; }
+  .pcn-shell { width: calc(100% - 1.5rem); margin-inline: auto; padding: 1.25rem; }
+  .pcn-shell .accordion-button { padding: .85rem 1rem; font-size: .95rem; }
+}
+
+/* Capa: mantém o fundo preenchendo o hero mesmo com os estilos legados do template. */
+.hero-section-modern { position: relative; height: calc(100vh - 84px); min-height: 560px; overflow: hidden; }
+.hero-section-modern .hero-background { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; }
+.hero-section-modern .hero-image { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.hero-section-modern .hero-overlay { position: absolute; inset: 0; }
+.hero-section-modern .hero-content { position: relative; z-index: 2; height: 100%; min-height: 100%; }
+.hero-section-modern .hero-cta-single { margin-top: 17rem; }
+@media (max-width: 767.98px) { .hero-section-modern { height: calc(100dvh - 64px); min-height: 500px; } }
+@media (max-width: 767.98px) { .hero-section-modern .hero-cta-single { margin-top: 11rem; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #principais-temas .row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  #principais-temas .row > [class*="col-"] {
+    width: auto;
+    max-width: none;
+    padding: 0;
+  }
+  #principais-temas .tema-card { height: 350px; min-height: 350px; }
+  #principais-temas .tema-card .tema-icon { width: 4rem; height: 4rem; flex-basis: 4rem; }
+  #principais-temas .tema-card .tema-icon i { font-size: 2.45rem !important; }
+}
+
+@media (max-width: 767.98px) {
+  #principais-temas .row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  #principais-temas .row > [class*="col-"] {
+    width: auto;
+    max-width: none;
+    padding: 0;
+  }
+  #principais-temas .tema-card { height: 340px; min-height: 340px; }
+  #principais-temas .tema-card .tema-icon { width: 3.75rem; height: 3.75rem; flex-basis: 3.75rem; }
+  #principais-temas .tema-card .tema-icon i { font-size: 2.25rem !important; }
 }

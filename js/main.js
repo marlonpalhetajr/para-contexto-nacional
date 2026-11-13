@@ -18,7 +18,7 @@ function accessibilityMenuHtml() {
             <i class="bi bi-universal-access" aria-hidden="true"></i> <span class="d-none d-xl-inline">Acessibilidade</span>
         </button>
         <div id="acessibilidadeMenu" class="acess-dropdown" hidden>
-            <div class="acess-section-title">Visão</div>
+            <div class="acess-section-title">VisÃ£o</div>
             <div class="acess-row"><button id="acess-contrast" class="acess-control" type="button">Alto contraste</button><button id="acess-night" class="acess-control" type="button">Modo noturno</button></div>
             <div class="acess-section-title">Cores</div>
             <div class="acess-row"><button id="acess-grayscale" class="acess-control" type="button">Escala em cinza</button></div>
@@ -29,7 +29,7 @@ function accessibilityMenuHtml() {
             <div class="acess-section-title">Leitura e legibilidade</div>
             <div class="acess-row"><button id="acess-dislexia" class="acess-control" type="button">Modo dislexia</button><button id="acess-reading" class="acess-control" type="button">Modo leitura</button><button id="acess-links" class="acess-control" type="button">Destacar links</button></div>
             <div class="acess-section-title">Movimento</div>
-            <div class="acess-row"><button id="reduce-motion" class="acess-control" type="button">Reduzir animações</button></div>
+            <div class="acess-row"><button id="reduce-motion" class="acess-control" type="button">Reduzir animaÃ§Ãµes</button></div>
             <div class="acess-section-title">Geral</div>
             <div class="acess-row"><button id="acess-reset" class="acess-control acess-reset" type="button">Restaurar tudo</button></div>
         </div>
@@ -38,15 +38,13 @@ function accessibilityMenuHtml() {
 
 function navbarHtml() {
     return `
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0" id="navbar" aria-label="Navegação principal">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5"><h1>FAPESPA</h1></a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Alternar navegação"><span class="navbar-toggler-icon"></span></button>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0" id="navbar" aria-label="NavegaÃ§Ã£o principal">
+        <a href="https://www.fapespa.pa.gov.br/" target="_blank" rel="noopener noreferrer" class="navbar-brand d-flex align-items-center px-4 px-lg-5"><h1 class="m-3">FAPESPA</h1></a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Alternar navegaÃ§Ã£o"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ms-auto p-4 p-lg-0 align-items-lg-center">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#pcn">PCN</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#principais-temas">Temas</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#inicio">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#pcn">Pará no Contexto Nacional</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.html#contato">Contato</a></li>
                 ${accessibilityMenuHtml()}
             </ul>
@@ -56,11 +54,11 @@ function navbarHtml() {
 
 function footerHtml() {
     return `
-    <footer id="contato" class="footer-main">
+    <footer id="contato" class="footer-main js-reveal section-break">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h2 class="h5 footer-title mb-4">Sobre FAPESPA</h2>
+                    <h5 class="footer-title mb-4">Sobre FAPESPA</h5>
                     <p class="small text-light">Fundação Amazônia de Amparo a Estudos e Pesquisas, promovendo ciência, tecnologia e inovação para o desenvolvimento do estado.</p>
                     <div class="social-icons mt-4">
                         <a href="https://www.instagram.com/fapespa/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
@@ -69,35 +67,34 @@ function footerHtml() {
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h2 class="h5 footer-title mb-4">Contato</h2>
+                    <h5 class="footer-title mb-4">Contato</h5>
                     <ul class="list-unstyled small text-light">
-                        <li class="mb-3"><i class="bi bi-geo-alt me-2" aria-hidden="true"></i><span>Av. Presidente Vargas, 670</span></li>
-                        <li class="mb-3"><i class="bi bi-telephone me-2" aria-hidden="true"></i><span>+55 (91) 3323-2550</span></li>
-                        <li class="mb-3"><i class="bi bi-clock me-2" aria-hidden="true"></i><span>Seg–Sex: 8h às 14h</span></li>
-                        <li><i class="bi bi-envelope me-2" aria-hidden="true"></i><a href="mailto:contato@fapespa.pa.gov.br">contato@fapespa.pa.gov.br</a></li>
+                        <li class="mb-3"><i class="bi bi-geo-alt me-2 text-primary" aria-hidden="true"></i><span>Av. Brg. Protásio, 621 - Marco, Belém - PA</span></li>
+                        <li class="mb-3"><i class="bi bi-telephone me-2 text-primary" aria-hidden="true"></i><span>+55 (91) 3323-2550</span></li>
+                        <li class="mb-3"><i class="bi bi-clock me-2 text-primary" aria-hidden="true"></i><span>Seg-Sex: 8h às 14h</span></li>
+                        <li><i class="bi bi-envelope me-2 text-primary" aria-hidden="true"></i><a href="mailto:contato@fapespa.pa.gov.br" class="text-light text-decoration-none">contato@fapespa.pa.gov.br</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h2 class="h5 footer-title mb-4">Produtos</h2>
+                    <h5 class="footer-title mb-4">Produtos</h5>
                     <ul class="list-unstyled small">
-                        <li class="mb-2"><a href="https://www.fapespa.pa.gov.br/anuario-estatistico-do-para-2/" target="_blank" rel="noopener noreferrer">Anuário Estatístico</a></li>
-                        <li class="mb-2"><a href="https://www.fapespa.pa.gov.br/radar-de-indicadores-das-ri/" target="_blank" rel="noopener noreferrer">Radar de Indicadores</a></li>
-                        <li class="mb-2"><a href="https://www.fapespa.pa.gov.br/para-no-contexto-nacional-2/" target="_blank" rel="noopener noreferrer">Pará no Contexto Nacional</a></li>
-                        <li class="mb-2"><a href="https://www.fapespa.pa.gov.br/estatistica-municipal/" target="_blank" rel="noopener noreferrer">Estatística Municipal</a></li>
-                        <li><a href="https://www.fapespa.pa.gov.br/para-em-numeros/" target="_blank" rel="noopener noreferrer">Pará em Números</a></li>
+                        <li class="mb-2"><a href="https://www.fapespa.pa.gov.br/anuario-estatistico-do-para-2/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">Anuário Estatístico</a></li>
+                        <li class="mb-2"><a href="https://www.fapespa.pa.gov.br/radar-de-indicadores-das-ri/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">Radar de Indicadores</a></li>
+                        <li class="mb-2"><a href="https://www.fapespa.pa.gov.br/para-no-contexto-nacional-2/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">Pará no Contexto Nacional</a></li>
+                        <li class="mb-2"><a href="https://www.fapespa.pa.gov.br/estatistica-municipal/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">Estatística Municipal</a></li>
+                        <li><a href="https://www.fapespa.pa.gov.br/para-em-numeros/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">Pará em Números</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h2 class="h5 footer-title mb-4">Localização</h2>
-                    <div class="map-embed rounded"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.61483842183!2d-48.4907923!3d-1.4589201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a488a1b633b497%3A0xf63d2e2601a4e1e8!2sFunda%C3%A7%C3%A3o%20Amaz%C3%B4nia%20de%20Amparo%20a%20Estudos%20e%20Pesquisas%20-%20FAPESPA!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização da FAPESPA"></iframe></div>
+                    <h5 class="footer-title mb-4">Localização</h5>
+                    <div class="map-embed rounded"><iframe src="https://www.google.com/maps?q=Av.%20Brg.%20Prot%C3%A1sio%2C%20621%20-%20Marco%2C%20Bel%C3%A9m%20-%20PA&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização FAPESPA"></iframe></div>
                 </div>
             </div>
         </div>
     </footer>
-    <div class="footer-copyright text-center"><div class="container"><small>© Pará no Contexto Nacional 2024. Todos os direitos reservados. <a href="https://www.fapespa.pa.gov.br/">FAPESPA</a></small></div></div>
+    <div class="footer-copyright text-center py-4 section-break"><div class="container"><small class="text-muted">© Pará no Contexto Nacional, Todos os direitos reservados. <a href="https://www.fapespa.pa.gov.br/" class="text-muted text-decoration-none">FAPESPA</a></small></div></div>
     <button type="button" id="btnTop" aria-label="Voltar ao topo" title="Voltar ao topo"><i class="bi bi-arrow-up" aria-hidden="true"></i></button>`;
 }
-
 function injectPcnSharedLayout() {
     const existingNavbar = document.querySelector('.navbar');
     if (existingNavbar) existingNavbar.outerHTML = navbarHtml();
@@ -120,7 +117,7 @@ function introHtml(title, description, stats) {
     return `
     <section class="container pcn-page-intro">
         <div class="pcn-page-intro-card">
-            <span class="pcn-kicker">PCN 2024</span>
+            <span class="pcn-kicker">PCN</span>
             <h1 class="pcn-page-title">${title}</h1>
             <p class="pcn-page-subtitle">${description}</p>
             ${stats ? `<div class="pcn-stats-grid">${stats.map(([value, label]) => `<div class="pcn-stat"><strong>${value}</strong><span>${label}</span></div>`).join('')}</div>` : ''}
@@ -141,13 +138,13 @@ function enhancePageStructure(page) {
         const title = document.title.split('|')[0].trim();
         const content = document.querySelector('body > .container-xxl, main > .container-xxl, .container-xxl');
         if (content) {
-            content.insertAdjacentHTML('beforebegin', introHtml(title, `Consulte as tabelas e indicadores de ${title.toLocaleLowerCase('pt-BR')} do Pará no Contexto Nacional 2024.`));
+            content.insertAdjacentHTML('beforebegin', introHtml(title, `Consulte as tabelas e indicadores de ${title.toLocaleLowerCase('pt-BR')} do ParÃ¡ no Contexto Nacional.`));
         }
     }
 
     if (page === 'project.html' && !document.querySelector('.pcn-page-intro')) {
         const content = document.querySelector('body > .container-xxl, .container-xxl');
-        if (content) content.insertAdjacentHTML('beforebegin', introHtml('Mapas', 'Explore e baixe os mapas temáticos do Pará no Contexto Nacional 2024.', [['16', 'Temas'], ['84', 'Mapas'], ['PNG', 'Formato']]));
+        if (content) content.insertAdjacentHTML('beforebegin', introHtml('Mapas', 'Explore e baixe os mapas temÃ¡ticos do ParÃ¡ no Contexto Nacional.', [['16', 'Temas'], ['84', 'Mapas'], ['PNG', 'Formato']]));
     }
 }
 
@@ -194,7 +191,7 @@ function initializeAccessibility() {
     on('acess-dislexia', () => toggle('a11y-dyslexia', 'Modo dislexia'));
     on('acess-reading', () => toggle('a11y-reading', 'Modo leitura'));
     on('acess-links', () => toggle('a11y-links', 'Destaque de links'));
-    on('reduce-motion', () => toggle('a11y-reduce-motion', 'Redução de animações'));
+    on('reduce-motion', () => toggle('a11y-reduce-motion', 'ReduÃ§Ã£o de animaÃ§Ãµes'));
     on('dalton-prot', () => setColor('a11y-protanopia', 'Filtro para protanopia ativado'));
     on('dalton-deut', () => setColor('a11y-deuteranopia', 'Filtro para deuteranopia ativado'));
     on('dalton-trit', () => setColor('a11y-tritanopia', 'Filtro para tritanopia ativado'));
@@ -202,7 +199,7 @@ function initializeAccessibility() {
     on('font-dec', () => { fontSize = Math.max(80, fontSize - 10); root.style.fontSize = `${fontSize}%`; announce('Fonte reduzida'); persist(); });
     on('font-reset', () => { fontSize = 100; root.style.fontSize = '100%'; announce('Tamanho da fonte restaurado'); persist(); });
     on('font-inc', () => { fontSize = Math.min(150, fontSize + 10); root.style.fontSize = `${fontSize}%`; announce('Fonte aumentada'); persist(); });
-    on('acess-reset', () => { modes.forEach((mode) => root.classList.remove(mode)); fontSize = 100; root.style.fontSize = '100%'; localStorage.removeItem('pcn-a11y'); localStorage.removeItem('pcn-font-size'); announce('Preferências restauradas'); });
+    on('acess-reset', () => { modes.forEach((mode) => root.classList.remove(mode)); fontSize = 100; root.style.fontSize = '100%'; localStorage.removeItem('pcn-a11y'); localStorage.removeItem('pcn-font-size'); announce('PreferÃªncias restauradas'); });
 
     document.addEventListener('click', (event) => {
         if (!menu.hidden && !menu.contains(event.target) && !opener.contains(event.target)) {
@@ -243,9 +240,82 @@ function initializePortfolio() {
     applyFilter(filters[0].dataset.filter || '*');
 }
 
+function initializePowerBiEmbeds() {
+    document.querySelectorAll('[data-powerbi-url]').forEach((container) => {
+        const url = container.dataset.powerbiUrl;
+        if (!url || container.querySelector('iframe')) return;
+
+        const title = container.dataset.powerbiTitle || 'Dashboard Power BI';
+        const frame = document.createElement('iframe');
+        frame.src = url;
+        frame.title = title;
+        frame.loading = 'lazy';
+        frame.allowFullscreen = true;
+        frame.referrerPolicy = 'no-referrer-when-downgrade';
+        container.classList.add('powerbi-container');
+        container.replaceChildren(frame);
+
+        const actions = document.createElement('div');
+        actions.className = 'powerbi-actions';
+        actions.innerHTML = `<a class="btn btn-outline-primary btn-sm" href="${encodeURI(url)}" target="_blank" rel="noopener noreferrer">Abrir dashboard em nova aba</a>`;
+        container.insertAdjacentElement('afterend', actions);
+    });
+}
+
+function initializeEconomySubthemes() {
+    const toggle = document.querySelector('[data-economia-toggle]');
+    const panel = document.getElementById('economia-subtemas');
+    if (!toggle || !panel) return;
+
+    toggle.addEventListener('click', () => {
+        const isHidden = panel.hidden;
+        panel.hidden = !isHidden;
+        toggle.setAttribute('aria-expanded', String(isHidden));
+        toggle.firstChild.nodeValue = isHidden ? 'Ocultar subtemas ' : 'Ver subtemas ';
+        if (isHidden) panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+}
+
+function initializeGenericDashboard() {
+    const embed = document.getElementById('dashboard-embed');
+    if (!embed) return;
+
+    const dashboards = {
+        educacao: ['Educação', 'https://app.powerbi.com/view?r=eyJrIjoiZjNmYTBiMTYtMmYxOS00OTg4LTg5YjYtYjVmZTU4ZjQxNzI5IiwidCI6IjAzMzJhOGEyLWUzODMtNDYwYi1hMjhkLTUyYTM0Mjg4YTRhZCJ9'],
+        saude: ['Saúde', 'https://app.powerbi.com/view?r=eyJrIjoiYzBlNTAxOGEtNjRmMy00OTUwLWI5MjAtZmJlOGQ2MjhhZDdmIiwidCI6IjAzMzJhOGEyLWUzODMtNDYwYi1hMjhkLTUyYTM0Mjg4YTRhZCJ9'],
+        inclusao: ['Inclusão Social', 'https://app.powerbi.com/view?r=eyJrIjoiYjE3M2M5YWEtYzIwMy00MTdiLWJiY2MtZDkwMjdhMTc1OWI3IiwidCI6IjAzMzJhOGEyLWUzODMtNDYwYi1hMjhkLTUyYTM0Mjg4YTRhZCJ9'],
+        previdencia: ['Previdência Social', 'https://app.powerbi.com/view?r=eyJrIjoiMGJiNzMxMjUtM2M4ZS00YjY5LWI5YjYtZjU2MjExMzQxNGI1IiwidCI6IjAzMzJhOGEyLWUzODMtNDYwYi1hMjhkLTUyYTM0Mjg4YTRhZCJ9'],
+        seguranca: ['Segurança', 'https://app.powerbi.com/view?r=eyJrIjoiYmZjNTZhNmUtZmQyYy00ZjNkLTg3NWItMDAyNDMwZTI3Yjc5IiwidCI6IjAzMzJhOGEyLWUzODMtNDYwYi1hMjhkLTUyYTM0Mjg4YTRhZCJ9'],
+        financas: ['Finanças Públicas', 'https://app.powerbi.com/view?r=eyJrIjoiYjY3MzRhNTktZWY0NC00ZWNhLTk5YWEtZTdmODUzZTNjZDk4IiwidCI6IjAzMzJhOGEyLWUzODMtNDYwYi1hMjhkLTUyYTM0Mjg4YTRhZCJ9'],
+        balanca: ['Balança Comercial', 'https://app.powerbi.com/view?r=eyJrIjoiNDM5NDNmZjktMDIzNy00MjFiLTkyNWEtOGEyNjIzYTE4MTEyIiwidCI6IjAzMzJhOGEyLWUzODMtNDYwYi1hMjhkLTUyYTM0Mjg4YTRhZCJ9'],
+        infraestrutura: ['Infraestrutura', 'https://app.powerbi.com/view?r=eyJrIjoiZDVkOTZkYzgtZDhkYi00ODJlLWEwMmEtN2YxYWZlMGFmMTNiIiwidCI6IjAzMzJhOGEyLWUzODMtNDYwYi1hMjhkLTUyYTM0Mjg4YTRhZCJ9'],
+        habitacao: ['Habitação e Saneamento', 'https://app.powerbi.com/view?r=eyJrIjoiNWQ3NzNiOTAtZDY5ZS00M2U0LTlhOWUtMjI0MjliZmY4MGJkIiwidCI6IjAzMzJhOGEyLWUzODMtNDYwYi1hMjhkLTUyYTM0Mjg4YTRhZCJ9'],
+        agricultura: ['Agricultura', 'https://app.powerbi.com/view?r=eyJrIjoiMjA2NzZmNDctODViMy00MTZhLTg4ZWYtNjA0MTBjNWIyZjkwIiwidCI6IjAzMzJhOGEyLWUzODMtNDYwYi1hMjhkLTUyYTM0Mjg4YTRhZCJ9'],
+        comercio: ['Comércio', 'https://app.powerbi.com/view?r=eyJrIjoiYzY0YWU1MjItZDA0Ny00YTY2LWI4NzgtODEyMzdhMjc1NjQ5IiwidCI6IjAzMzJhOGEyLWUzODMtNDYwYi1hMjhkLTUyYTM0Mjg4YTRhZCJ9'],
+        construcao: ['Construção Civil', 'https://app.powerbi.com/view?r=eyJrIjoiZjg5M2YwY2UtMzUwMi00ZGMxLTg3YmUtYWQ4YjVhNTg0ZDkzIiwidCI6IjAzMzJhOGEyLWUzODMtNDYwYi1hMjhkLTUyYTM0Mjg4YTRhZCJ9'],
+        extrativa: ['Extrativa e Silvicultura', 'https://app.powerbi.com/view?r=eyJrIjoiNjViZWQ5MTMtOTA0ZS00Njk1LTg4NjgtNTE5YzYwZmJlODNmIiwidCI6IjAzMzJhOGEyLWUzODMtNDYwYi1hMjhkLTUyYTM0Mjg4YTRhZCJ9'],
+        industria: ['Indústria', 'https://app.powerbi.com/view?r=eyJrIjoiOTlkYTc3NDAtZjk5My00ZmExLTllNTUtZmIxMDJmNzljMDAzIiwidCI6IjAzMzJhOGEyLWUzODMtNDYwYi1hMjhkLTUyYTM0Mjg4YTRhZCJ9'],
+        pecuaria: ['Pecuária', 'https://app.powerbi.com/view?r=eyJrIjoiMzZhNDU5YTItNGE1Yi00N2M4LWIzZjEtYWY1ZmU1ZDE1Yjg3IiwidCI6IjAzMzJhOGEyLWUzODMtNDYwYi1hMjhkLTUyYTM0Mjg4YTRhZCJ9'],
+        servicos: ['Serviços', 'https://app.powerbi.com/view?r=eyJrIjoiZTQxMWNjNjYtMzFiYS00Mzg1LWFmNmMtYzBkYzgxNzg5OTljIiwidCI6IjAzMzJhOGEyLWUzODMtNDYwYi1hMjhkLTUyYTM0Mjg4YTRhZCJ9']
+    };
+    const key = new URLSearchParams(location.search).get('tema');
+    const [title, url] = dashboards[key] || ['Dashboard', ''];
+    document.title = `${title} | Pará no Contexto Nacional`;
+    document.getElementById('dashboard-title').textContent = title;
+    document.getElementById('dashboard-fallback-title').textContent = `Dashboard de ${title}`;
+    document.getElementById('dashboard-description').textContent = `Explore os indicadores de ${title.toLocaleLowerCase('pt-BR')} do Pará em um painel interativo.`;
+    embed.dataset.powerbiUrl = url;
+    embed.dataset.powerbiTitle = `Dashboard de ${title} do Pará`;
+    if (url) initializePowerBiEmbeds();
+}
+
 function initializePcnPage() {
+    injectPcnSharedLayout();
     initializeAccessibility();
     initializePortfolio();
+    initializePowerBiEmbeds();
+    initializeEconomySubthemes();
+    initializeGenericDashboard();
 
     document.getElementById('spinner')?.classList.remove('show');
     document.querySelectorAll('a[target="_blank"]').forEach((link) => link.setAttribute('rel', 'noopener noreferrer'));
