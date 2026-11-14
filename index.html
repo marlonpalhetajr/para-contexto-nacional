@@ -375,12 +375,28 @@
       const title = modalTrigger.getAttribute('data-modal-title') || 'Conteúdo';
       modalTitle.textContent = title;
       modalFullLink.href = url;
-      modalBody.innerHTML = '<iframe title="Conteúdo editorial" src="' + encodeURI(url) + '" loading="lazy"></iframe>';
+      modalBody.innerHTML = '<div class="modal-loading" role="status">Carregando apresentação...</div>';
       modal.hidden = false;
       backdrop.hidden = false;
       document.body.classList.add('modal-open');
       modalTrigger.setAttribute('aria-expanded', 'true');
       modal.querySelector('.custom-modal-close')?.focus();
+
+      fetch(url, { credentials: 'same-origin' })
+        .then((response) => {
+          if (!response.ok) throw new Error('Falha ao carregar a apresentação.');
+          return response.text();
+        })
+        .then((html) => {
+          const parsed = new DOMParser().parseFromString(html, 'text/html');
+          const article = parsed.querySelector('article');
+          if (!article) throw new Error('Conteúdo da apresentação não encontrado.');
+          article.querySelectorAll('#cabecalho, header, footer, nav').forEach((element) => element.remove());
+          modalBody.replaceChildren(article);
+        })
+        .catch(() => {
+          modalBody.innerHTML = '<p class="modal-error">Não foi possível carregar a apresentação. <a href="' + encodeURI(url) + '" target="_blank" rel="noopener">Abrir em nova aba</a>.</p>';
+        });
     }
 
     function closeCustomModal() {
